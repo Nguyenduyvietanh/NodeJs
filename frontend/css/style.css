@@ -1,0 +1,56 @@
+.text-error {
+    display: none;
+    font-size: 14px;
+    color: red;
+    padding: 5px 10px;
+}
+.right{
+    margin-top: 10px;
+}
+
+.content-news{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 17px;
+}
+.box-news{
+    display: block;
+    width: 100%;
+    margin-top: 40px;
+}
+.image-new{
+    opacity: 1;
+    width: 100%;
+}
+.image-new:hover {
+  opacity: 0.9 ;
+}
+.title-new{
+    margin-top: -10px;
+}
+.title-new a{
+    text-decoration: none;
+    color: #252a2b;
+    line-height: 1.1;
+}
+.title-new a:hover{
+    color: #008B8B;
+    text-decoration: none;
+}
+.detail-new p{
+    height: 88px;
+    line-height: 1.4;
+    font-size: 14px;
+    color: #252a2b;
+    margin-top: -5px;
+}
+.box-news:hover{
+    opacity: 0.9;
+}
+.vietbai-new span{
+    font-size: 11px;
+    font-style: italic;
+}
+.vietbai-new{
+    margin-top: 5px;
+}

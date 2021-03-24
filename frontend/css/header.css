@@ -1,0 +1,450 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0px auto;
+    padding: 0px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.wrapper{
+    width: 1600px;  
+    margin: 0px auto;  
+}
+.header{
+    height: 166px;
+    background-color: #222222;   
+    position: relative;
+}
+.top-header{
+    text-align: right;
+    padding: 20px 215px;
+    color: #fff;
+}
+.top-header a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    padding: 0 5px;
+}
+.top-header a:hover{
+    color: red;
+    text-decoration: none;
+  
+}
+/********end top header*******/
+.mid-header{
+    padding: 0px 215px;
+    display: grid;
+    grid-template-columns: 437px 634px 1fr;
+    margin-bottom: 16px;
+}
+.logo{
+    top: 18px; 
+    position: absolute;
+    left: 217px;
+}
+.search input{
+    height: 37px;
+    width: 500px;
+    padding-left: 28px;
+    border-radius: 7px 0px 0px 7px;
+    border: none;
+}
+.search button{
+    height: 37px;
+    width: 86px;
+    background-color: #f10e34;
+    color: #ffff;
+    border: none;
+    border-radius: 0px 7px 7px 0px;
+}
+
+.total p{
+    color: #ffff;
+}
+.bbb{
+    position: absolute;
+    top: 42px;
+    right: 217px;
+}
+/**********END MID HEADER****************/
+.menu{
+    height: 50px;
+    background-color: #f10e34;
+    
+}
+ul{
+    text-align: right;
+    padding-right: 332px;
+}
+ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 14px 0px;
+}
+ul li a{
+    text-decoration: none;
+    padding: 0px 35px 0px 35px;
+    color: #ffff;
+    font-size: 20px;
+    
+}
+ul li a:hover{
+    color: blue;    
+    text-decoration: none;
+}
+/***********end menu*************/
+.content{
+    padding: 0px 215px;
+    background-color: #f3f3f3;
+    height: auto;
+}
+
+.menu-con{
+    height: auto;
+    width: 298px;
+    background-color: #ffff;
+    padding-left: 25px;
+    padding-top: 20px;
+}
+.menu-con a{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    line-height: 30px;
+}
+.menu-con a:hover{
+    color: blue;
+    text-decoration: none;
+}
+
+/****************END menucon*******/
+.hot-dear{
+    background-color: #ffff;
+    height: 430px;
+    width: 298px;
+    padding-left: 25px;
+    
+}
+.top-hot-deal{
+    display: grid;
+    grid-template-columns: 200px 1fr;
+}
+.top-hot-deal h3{
+    font-size: 22px;
+}
+.top-hot-deal img{
+    padding-top: 20px;
+}
+.img-hotdeal img{
+    padding-top: 25px;
+}
+.giatien{
+    padding-top: 10px;
+    text-align: center;
+}
+.giatien a {
+    text-decoration: none;
+    color: black;
+}
+.giatien a:hover{
+    color: blue;
+}
+/*************end hot dear**************/
+.Special-deal{
+    width: 298px;
+    height: 430px;
+    background-color: #ffff;
+    padding-left: 25px;
+}
+/***********END SPEACIL= HOTDEAL*********/
+.newletter{
+    background-color: #ffff;
+    width: 298px;
+    height: 290px;
+    padding-top: 10px;
+    padding-left: 25px;
+}
+.newletter h3{
+    font-size: 22px;
+}
+.newletter p{
+    font-size: 15px;
+}
+.newletter input{
+    background-color: #f3f3f3;
+    border: none;
+    border-radius: 5px;
+    width: 250px;
+    height: 45px;
+}
+.newletter button{
+    width: 133px;
+    height: 46px;
+    background-color: #f22f49;
+    border: none;
+    border-radius: 20px;
+    font-size: 15px;
+    color: #ffff;
+}
+.newletter button:hover{
+    background-color: blue;
+}
+.sub{
+    margin: 20px 0px;  
+    padding-bottom: 20px;
+}
+/****************end new letter************/
+/********************chia khoi****/
+.content{
+    display: grid;
+    grid-template-columns: 298px 1fr;
+    grid-gap: 38px;
+}
+/********right********/
+.right{
+    position: relative;
+    height: auto;
+
+}
+.banner a{
+    text-decoration: none;
+    color: red;
+    font-weight: bold;
+    font-size: 20px;
+    position: absolute;
+    top: 270px;
+    right: 535px;
+}
+.banner a:hover{
+    color: blue;
+}
+/************end banner***********/
+.sanpham{
+    width: 834px;
+    height: 454px;
+    background-color: #ffff;
+    padding-left: 25px;
+}
+.top-sp{
+    display: grid;
+    grid-template-columns: 590px 140px 1fr;
+}
+.tensp h3{
+    font-size: 22px;
+}
+.danhmuc{
+    padding-top: 22px;
+}
+.danhmuc a{
+    text-decoration: none;
+    color:black;
+    margin-left: 17px;
+}
+.danhmuc a:hover{
+    color: blue;
+    text-decoration: none;
+}
+.icon{
+    padding-top: 22px;
+}
+.loaisp{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-top: 20px;
+}
+.gia a{
+    text-decoration: none; 
+    transition: .6s;
+    color: black;
+    text-decoration: none;
+}
+.gia a:hover{
+    color: red;
+    font-weight: 600;
+    text-decoration: none; 
+    transition: .6s;
+    transform: scale(1.02);
+
+}
+.gia{
+    padding-top: 20px;
+    padding-left: 35px;
+}
+
+/****end sp new produc+  lattest produc*****/
+.baner2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 24px;
+}
+.shownowbn3 button{
+    height: 46px;
+    width: 132px;
+    background-color: #f22f49;
+    color: #ffff;
+    border: none;
+    border-radius: 15px;
+}
+.shownowbn3 button:hover{
+    background-color: blue;
+}
+.shownowbn3{
+    position: absolute;
+    top: 1770px;  
+    right: 205px;
+}
+/**************end banner3**************/
+.featured-produc{
+    background-color: #ffff;
+    height: 389px;
+    padding-left: 25px;
+}
+.top-featured{
+    display: grid;
+    grid-template-columns: 729px 1fr;
+}
+.top-featured>a>img{
+    padding-top: 22px;
+}
+.top-featured h3{
+    font-size: 22px;
+}
+/***************/
+.xp123456{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 50px;
+    padding-top: 20px;
+}
+.xp{
+    display: grid;
+    grid-template-columns: 88px 1fr;
+    padding-left: 15px;
+    grid-gap: 10px;
+}
+.giaxp a{
+    text-decoration: none;
+    color: black;
+}
+.giaxp a:hover{
+    color: blue;
+}
+/********end featured prduc***************/
+/* .thuonghieu {
+    height: 182px;
+    width: 1600px;
+    background-color: #f10e34;
+    text-align: center;
+    padding-top: 38px;   
+} */
+/***********end thuonghieu******/
+.footer{
+    margin-top: 100px;
+    height: 407px ;
+    background-color: #222222;
+    padding: 40px 215px;
+}
+/*****cot1****/
+.c1 >p{
+    font-size: 15px;
+    color: #ffff;
+    line-height: 30px;
+}
+.diachi{
+    display: grid;
+    grid-template-columns: 24px 1fr;   
+}
+.img-diachi{
+    padding-top: 19px;
+}
+.text-diachi p{
+    color: #ffff;
+    font-size: 15px;
+}
+/************chia ********/
+.footer{
+    display: grid;
+    grid-template-columns: 356px 250px 322px 1fr;
+}
+/***********c2*********/
+.c2 h4{
+    font-size: 20px;
+    color: #ffff;
+}
+.c2 p{
+    font-size: 15px;
+    color: #ffff;
+    padding-top: 20px;
+    line-height: 2px;
+}
+/********c3********/
+.c3 h4{
+    font-size: 20px;
+    color: #ffff;
+}
+.mxh{
+    display: grid;
+    grid-template-columns: 24px 1fr;
+}
+.img-mxh{
+    padding-top: 15px;
+}
+.text-mxh{
+    color: #ffff;
+    font-size: 15px;
+    line-height: 15px
+}
+.mxh2{
+    display: grid;
+    grid-template-columns: 24px 1fr;
+}
+.img-mxh2{
+    padding-top: 15px;
+}
+.text-mxh2{
+    color: #ffff;
+    font-size: 15px;
+    line-height: 15px
+}
+.chiamxh{
+    display: grid;
+    grid-template-columns: 137px 1fr;
+}
+/****************c4**************/
+.c4 h4{
+    font-size: 20px;
+    color: #ffff;
+}
+.chia-time{
+    display: grid;
+    grid-template-columns: 33px 1fr;
+}
+.img-time{
+    padding-top: 16px;
+}
+.text-time{
+    color: #ffff;
+    font-size: 15px;
+    line-height: 15px;
+}
+/**********end foter*******/
+.coppyright{
+    height: 141px; 
+    background-color: #1f1e1e;
+    padding: 0px 215px;
+    text-align: center;
+    padding-top: 40px;
+}
+.coppyright p{
+    color: #fff;
+    word-spacing: 40px;
+}
+.coppyright span{
+    font-size: 17px;
+    color: #ffff;
+}
+marquee p{
+    font-size: 20px;
+    color: blue;
+}

@@ -1,0 +1,53 @@
+.danhmuc-sp{
+    display:  grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-gap: 20px;
+         
+   }
+   .all-sp{
+       border: 1px solid rgb(252, 218, 202);
+       text-align: center;
+       position: relative;
+           height: 525px;
+       overflow: hidden;
+   }
+   .all-sp:hover div.text button{
+      bottom: 9px;
+      transition: .6s;
+      
+   
+   }
+   .imgg img{
+       transition: 0.5s;
+   }
+   .all-sp:hover div.imgg img{
+       opacity: 0.5;
+       transform: scale(1.1);
+       transition: .5s;
+   }
+   .text button{
+       background-color: black;
+       color: #ffffff;
+       border: none;
+       position: absolute;
+       left: 38px;
+       bottom: -50px;
+       transition: .6s;
+       cursor: pointer;
+   }
+   .nnn{
+       width: 170px ;
+       height: 40px;
+   }
+   .ten a{
+      text-decoration: none;
+      font-size: 20px;
+      color: red;
+   }
+   .ten a:hover{
+    text-decoration: none;
+   }
+   .ten{
+       margin-top: 18px;
+   }
+   

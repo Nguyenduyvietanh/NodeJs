@@ -1,0 +1,11 @@
+#main-content {
+    margin-top: 70px;
+    padding: 50px;
+}
+
+.text-error {
+    display: none;
+    font-size: 14px;
+    color: red;
+    padding: 5px 10px;
+}

@@ -1,0 +1,455 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "categoryId": "1",
+      "name": "Sơ Mi 2102 ",
+      "image": "https://storage.googleapis.com/cdn.nhanh.vn/store/662/ps/20201231/sm2102__2_.jpg",
+      "price": "849",
+      "status": false,
+      "quantity": 82644
+    },
+    {
+      "id": "2",
+      "categoryId": "1",
+      "name": "Sơ Mi M740",
+      "image": "https://storage.googleapis.com/cdn.nhanh.vn/store/662/ps/20201231/7400.jpg",
+      "price": "762.00",
+      "status": true,
+      "quantity": 57587
+    },
+    {
+      "id": "3",
+      "categoryId": "1",
+      "name": "Sơ Mi M1200A",
+      "image": "https://storage.googleapis.com/cdn.nhanh.vn/store/662/ps/20201217/1200aa.jpg",
+      "price": "633.00",
+      "status": false,
+      "quantity": 51117
+    },
+    {
+      "id": "4",
+      "categoryId": "1",
+      "name": "Sơ Mi M1200B ",
+      "image": "https://storage.googleapis.com/cdn.nhanh.vn/store/662/ps/20201217/smm1200b__1_.jpg",
+      "price": "728.00",
+      "status": false,
+      "quantity": 56
+    },
+    {
+      "id": "5",
+      "categoryId": "1",
+      "name": "Sơ Mi M6031",
+      "image": "https://storage.googleapis.com/cdn.nhanh.vn/store/662/ps/20201217/smm6031__5_.jpg",
+      "price": "364.00",
+      "status": true,
+      "quantity": 7373
+    },
+    {
+      "id": "6",
+      "categoryId": "1",
+      "name": "Sơ Mi 6516",
+      "image": "https://storage.googleapis.com/cdn.nhanh.vn/store/662/ps/20201217/so_mi_6516__2_.jpg",
+      "price": "654.00",
+      "status": true,
+      "quantity": 26
+    },
+    {
+      "id": "7",
+      "categoryId": "1",
+      "name": "Sơ Mi 6512",
+      "image": "https://storage.googleapis.com/cdn.nhanh.vn/store/662/ps/20201121/sm6512.jpg",
+      "price": "795.00",
+      "status": true,
+      "quantity": 61
+    },
+    {
+      "id": "8",
+      "categoryId": "1",
+      "name": "Sơ Mi 6515",
+      "image": "https://storage.googleapis.com/cdn.nhanh.vn/store/662/ps/20201121/sm651555.jpg",
+      "price": "513.00",
+      "status": false,
+      "quantity": 36
+    },
+    {
+      "id": "9",
+      "categoryId": "1",
+      "name": "Sơ Mi C101 ",
+      "image": "https://storage.googleapis.com/cdn.nhanh.vn/store/662/ps/20201121/smc10111.jpg",
+      "price": "741.00",
+      "status": false,
+      "quantity": 29
+    },
+    {
+      "id": "10",
+      "categoryId": "1",
+      "name": "Sơ Mi M278B",
+      "image": "https://storage.googleapis.com/cdn.nhanh.vn/store/662/ps/20201121/smm278b_5_.jpg",
+      "price": "471.00",
+      "status": true,
+      "quantity": 42
+    },
+    {
+      "id": "11",
+      "categoryId": "2",
+      "name": "Quần Jeans C016",
+      "image": "https://storage.googleapis.com/cdn.nhanh.vn/store/662/ps/20210120/qjc016_1_.jpg",
+      "price": "824.00",
+      "status": true,
+      "quantity": 86
+    },
+    {
+      "id": "12",
+      "categoryId": "2",
+      "name": "Quần Jeans RC2010",
+      "image": "https://storage.googleapis.com/cdn.nhanh.vn/store/662/ps/20210104/qjrc2010_5_.jpg",
+      "price": "611.00",
+      "status": false,
+      "quantity": 14
+    },
+    {
+      "id": "13",
+      "categoryId": "2",
+      "name": "Quần Jeans C013",
+      "image": "https://storage.googleapis.com/cdn.nhanh.vn/store/662/ps/20210104/qjc013_2_.jpg",
+      "price": "821.00",
+      "status": false,
+      "quantity": 64
+    },
+    {
+      "id": "14",
+      "categoryId": "2",
+      "name": "Quần Jeans C110",
+      "image": "https://storage.googleapis.com/cdn.nhanh.vn/store/662/ps/20210104/qjc110_3_.jpg",
+      "price": "894.00",
+      "status": true,
+      "quantity": 94
+    },
+    {
+      "id": "15",
+      "categoryId": "2",
+      "name": "Quần Jeans 3012",
+      "image": "https://storage.googleapis.com/cdn.nhanh.vn/store/662/ps/20210104/qj3012_7_.jpg",
+      "price": "156.00",
+      "status": false,
+      "quantity": 13
+    },
+    {
+      "id": "16",
+      "categoryId": "2",
+      "name": "Quần Jeans C109",
+      "image": "https://storage.googleapis.com/cdn.nhanh.vn/store/662/ps/20210104/qjc109_7_.jpg",
+      "price": "933.00",
+      "status": true,
+      "quantity": 64
+    },
+    {
+      "id": "17",
+      "categoryId": "2",
+      "name": "Quần Jeans C105",
+      "image": "https://storage.googleapis.com/cdn.nhanh.vn/store/662/ps/20210104/qjc105_3_.jpg",
+      "price": "694.00",
+      "status": false,
+      "quantity": 65
+    },
+    {
+      "id": "18",
+      "categoryId": "2",
+      "name": "Quần Jeans 8665",
+      "image": "https://storage.googleapis.com/cdn.nhanh.vn/store/662/ps/20210104/qj8665_2_.jpg",
+      "price": "797.00",
+      "status": false,
+      "quantity": 22
+    },
+    {
+      "id": "19",
+      "categoryId": "2",
+      "name": "Quần Jeans 3345",
+      "image": "https://storage.googleapis.com/cdn.nhanh.vn/store/662/ps/20200905/qj3345_4_.jpg",
+      "price": "841.00",
+      "status": false,
+      "quantity": 98
+    },
+    {
+      "id": "20",
+      "categoryId": "2",
+      "name": "Quần Jeans 3334",
+      "image": "https://storage.googleapis.com/cdn.nhanh.vn/store/662/ps/20201104/qj3334_gn20121_.jpg",
+      "price": "828.00",
+      "status": false,
+      "quantity": 63
+    },
+    {
+      "id": "21",
+      "categoryId": "2",
+      "name": "Quần Jeans 9510",
+      "image": "https://storage.googleapis.com/cdn.nhanh.vn/store/662/ps/20201022/sm8813_qj9510__11_.jpg",
+      "price": "848.00",
+      "status": false,
+      "quantity": 67
+    },
+    {
+      "id": "22",
+      "categoryId": "3",
+      "name": "Giày Nam L9152",
+      "image": "https://storage.googleapis.com/cdn.nhanh.vn/store/662/ps/20210122/gnl9152__5_.jpg",
+      "price": "849.00",
+      "status": false,
+      "quantity": 82644
+    },
+    {
+      "id": "23",
+      "categoryId": "3",
+      "name": "Giày Nam 8958",
+      "image": "https://storage.googleapis.com/cdn.nhanh.vn/store/662/ps/20210122/gn8958__2_.jpg",
+      "price": "762.00",
+      "status": true,
+      "quantity": 57587
+    },
+    {
+      "id": "24",
+      "categoryId": "3",
+      "name": "Giày Nam 9135",
+      "image": "https://storage.googleapis.com/cdn.nhanh.vn/store/662/ps/20210122/gn9135__1_.jpg",
+      "price": "633.00",
+      "status": false,
+      "quantity": 51117
+    },
+    {
+      "id": "25",
+      "categoryId": "3",
+      "name": "Giày Nam 8076",
+      "image": "https://storage.googleapis.com/cdn.nhanh.vn/store/662/ps/20210122/gn8076__4_.jpg",
+      "price": "728.00",
+      "status": false,
+      "quantity": 56
+    },
+    {
+      "id": "26",
+      "categoryId": "3",
+      "name": "Giày Nam 1192",
+      "image": "https://storage.googleapis.com/cdn.nhanh.vn/store/662/ps/20210122/gn1192__6_.jpg",
+      "price": "364.00",
+      "status": true,
+      "quantity": 7373
+    },
+    {
+      "id": "27",
+      "categoryId": "3",
+      "name": "Giày Nam 68008",
+      "image": "https://storage.googleapis.com/cdn.nhanh.vn/store/662/ps/20210122/gn68008__3_.jpg",
+      "price": "654.00",
+      "status": true,
+      "quantity": 26
+    },
+    {
+      "id": "28",
+      "categoryId": "3",
+      "name": "Giày Nam YH8219",
+      "image": "https://storage.googleapis.com/cdn.nhanh.vn/store/662/ps/20210122/gnyh8219__3_.jpg",
+      "price": "795.00",
+      "status": true,
+      "quantity": 61
+    },
+    {
+      "id": "29",
+      "categoryId": "3",
+      "name": "Giày Nam 205826",
+      "image": "https://storage.googleapis.com/cdn.nhanh.vn/store/662/ps/20210122/gn205826__8_.jpg",
+      "price": "513.00",
+      "status": false,
+      "quantity": 36
+    },
+    {
+      "id": "30",
+      "categoryId": "3",
+      "name": "Giày Nam 97002",
+      "image": "https://storage.googleapis.com/cdn.nhanh.vn/store/662/ps/20210122/gn97002__7_.jpg",
+      "price": "741.00",
+      "status": false,
+      "quantity": 29
+    },
+    {
+      "id": "31",
+      "categoryId": "4",
+      "name": "Balo MK 6078",
+      "image": "https://storage.googleapis.com/cdn.nhanh.vn/store/662/ps/20201206/bl6078_7_.jpg",
+      "price": "849.00",
+      "status": false,
+      "quantity": 82644
+    },
+    {
+      "id": "32",
+      "categoryId": "4",
+      "name": "Túi Đeo Chéo L8896",
+      "image": "https://storage.googleapis.com/cdn.nhanh.vn/store/662/ps/20201207/tuil8896_1_.jpg",
+      "price": "762.00",
+      "status": true,
+      "quantity": 57587
+    },
+    {
+      "id": "33",
+      "categoryId": "4",
+      "name": "Balo Da L1573",
+      "image": "https://storage.googleapis.com/cdn.nhanh.vn/store/662/ps/20201206/bll1573_2_.jpg",
+      "price": "633.00",
+      "status": false,
+      "quantity": 51117
+    },
+    {
+      "id": "34",
+      "categoryId": "4",
+      "name": "Balo Da L1925",
+      "image": "https://storage.googleapis.com/cdn.nhanh.vn/store/662/ps/20201206/bll1925_4_.jpg",
+      "price": "728.00",
+      "status": false,
+      "quantity": 56
+    },
+    {
+      "id": "35",
+      "categoryId": "4",
+      "name": "Cặp Xách Da L302",
+      "image": "https://storage.googleapis.com/cdn.nhanh.vn/store/662/ps/20201206/capl302__4_.jpg",
+      "price": "364.00",
+      "status": true,
+      "quantity": 7373
+    },
+    {
+      "id": "36",
+      "categoryId": "4",
+      "name": "Túi Đeo Chéo L9887",
+      "image": "https://storage.googleapis.com/cdn.nhanh.vn/store/662/ps/20201210/bum03557.jpg",
+      "price": "654.00",
+      "status": true,
+      "quantity": 26
+    },
+    {
+      "id": "37",
+      "categoryId": "4",
+      "name": "Balo Da L9003",
+      "image": "https://storage.googleapis.com/cdn.nhanh.vn/store/662/ps/20201206/bll9003_8_.jpg",
+      "price": "795.00",
+      "status": true,
+      "quantity": 61
+    },
+    {
+      "id": "38",
+      "categoryId": "4",
+      "name": "Balo Da L1923",
+      "image": "https://storage.googleapis.com/cdn.nhanh.vn/store/662/ps/20201206/bll1923_3_.jpg",
+      "price": "513.00",
+      "status": false,
+      "quantity": 36
+    },
+    {
+      "id": "39",
+      "categoryId": "4",
+      "name": "Balo Da L1013",
+      "image": "https://storage.googleapis.com/cdn.nhanh.vn/store/662/ps/20201206/bll1013_5_.jpg",
+      "price": "741.00",
+      "status": false,
+      "quantity": 29
+    },
+    {
+      "id": 40,
+      "name": "aaaaaaa",
+      "price": "11111",
+      "categoryId": "1",
+      "quantity": 11,
+      "image": "https://firebasestorage.googleapis.com/v0/b/shop-135a8.appspot.com/o/images%2Fz2351980465536_c027ac9a0ee905390d5db0a3ee0e0052.jpg?alt=media&token=7d915757-9ed4-42d3-9423-3bad79c23f29"
+    },
+    {
+      "id": 41,
+      "name": "sản phẩm mới giày",
+      "price": "300",
+      "categoryId": "1",
+      "quantity": 34324,
+      "image": "https://firebasestorage.googleapis.com/v0/b/shop-135a8.appspot.com/o/images%2Fhotdeal.jpg?alt=media&token=33378a75-d67e-4197-9a5d-740c5c0e3932"
+    }
+  ],
+  "categories": [
+    {
+      "id": "1",
+      "name": "ÁO NAM"
+    },
+    {
+      "id": "2",
+      "name": "QUẦN NAM"
+    },
+    {
+      "id": "3",
+      "name": "GIÀY NAM"
+    },
+    {
+      "id": "4",
+      "name": "BALO TÚI XÁCH"
+    }
+  ],
+  "contacts": [
+    {
+      "id": 1,
+      "name": "vietanhh",
+      "email": "abc@gmail.com",
+      "phone": "085060666",
+      "note": "Kết bạn với tao"
+    },
+    {
+      "id": 2,
+      "name": "Trần Đức Bo",
+      "email": "tranducbo@gmail.com",
+      "phone": "123456789",
+      "note": "Gọi lại cho Bo ngay, Bo mèo méo meo cho mấy  cái luôn <3 \nYêu shop nhiều !!!"
+    }
+  ],
+  "news": [
+    {
+      "id": 1,
+      "title": "Phối đồ với sơ mi trắng sao cho hợp ??",
+      "description": "Chỉ cần biết cách phối đồ với áo sơ mi trắng nam bạn đã có thể tạo ra những set đồ “cực chất”! Sự thật là…\n90% phụ nữ thừa nhận họ bị “đốn gục” hoàn toàn trước hình ảnh chàng trai mặc áo sơ mi....",
+      "image": "https://firebasestorage.googleapis.com/v0/b/shop-135a8.appspot.com/o/images%2Farticle_1590909601_777.jpg?alt=media&token=9e7b16bc-05ba-4f54-ab9d-0fc4f7f31c4f",
+      "name": "NguyenDuyVietAnh",
+      "content": "<p><i><strong>&nbsp;Chỉ cần biết cách phối đồ với áo sơ mi trắng nam bạn đã có thể tạo ra những set đồ “cực chất”!</strong></i></p><p><strong>Sự thật là…</strong></p><p>90% phụ nữ thừa nhận họ bị “đốn gục” hoàn toàn trước hình ảnh chàng trai mặc áo sơ mi trắng. Quả thật, sơ mi trắng chính là “vũ khí không lời” giúp phái mạnh toát lên nét quyến rũ chết người. Vậy áo sơ mi trắng nên mix cùng Items nào để “bộ cánh” nhìn thời thượng hơn? Có rất nhiều cách “hay ho” để&nbsp;phối đồ với áo sơ mi trắng nam,&nbsp;hãy để <strong>TONY4MEN</strong>&nbsp;“bật mí” cho bạn nhé !</p><figure class=\"image\"><img src=\"https://storage.googleapis.com/cdn.nhanh.vn/store/662/artCT/66073/600x400.jpg\" alt=\"\"></figure><p><i><strong>1.Áo sơ mi trắng mix với quần tây</strong></i></p><p>Nếu một ngày bạn không biết nên phối áo sơ mi trắng nam với quần gì, thì quần tây chính là lựa chọn tuyệt vời. Bạn không cần phải lăn tăn đâu! Bởi vốn dĩ “quần tây” và “áo sơ mi trắng” sinh ra là dành cho nhau. Bạn hãy thỏa sức biến tấu áo sơ mi trắng với một chiếc quần tây bất kỳ đen, xanh navy, nâu…Chỉ sau 30s, bạn lập tức hóa thân thành “soái ca” công sở vạn người mê.</p><p><i><strong>2.Áo sơ mi trắng nam mix&nbsp;với quần Jeans</strong></i></p><p>Quần jeans được mệnh danh là “trang phục quốc dân” với khả năng phối hợp cùng nhiều kiểu áo khác nhau. Và tất nhiên trong “cánh rừng” áo không thể vắng mặt áo sơ mi. Bạn có thể mix áo sơ mi trắng với bất kỳ kiểu quần jeans nào với phong cách trẻ trung, phủi bụi, đơn giản…chắc chắn bạn sẽ bất ngờ với sự hợp guu của “bộ đôi” này đấy!</p><p><i>Một chiếc áo sơ mi trắng kết hợp cùng quần jean có những chi tiết rách gối chắc chắn sẽ giúp chàng “nổi bần bật” trên phố đông người qua</i></p><p><i>Phối hợp “chuẩn gu” quần jean và áo sơ mi trắng sẽ đem đến cho bạn một diện mạo điển trai bất ngờ!</i></p><p><i><strong>3.Áo sơ mi trắng nam mix&nbsp;với quần kaki</strong></i></p><p>Đâu phải chỉ có quần tây hay jeans thì mới có thể “bắt cặp” với áo sơ mi trắng. Quần Kaki cũng là ứng cử viên sáng giá để mix cùng áo sơ mi trắng.</p><p>Quần kaki và áo sơ mi trắng là set trang phục cực kỳ ấn tượng dành cho những chàng trai chuộng phong cách lịch sự, thanh lịch. Với Combo này bạn có thể sử dụng trong mọi hoàn cảnh, chắc chắn sẽ thu hút được ánh nhìn của mọi cô gái.</p><p><i>Bộ đôi áo sơ mi trắng và quần Kaki luôn là lựa chọn hàng đầu của các đấng mày râu</i></p><p><i>Sự kết hợp giữa áo sơ mi trắng và quần Kaki sẽ đem đến cho bạn một vẻ đẹp bảnh bao và cực kỳ cuốn hút</i></p><p><i><strong>4.Áo sơ mi trắng với quần Short</strong></i></p><p>Đừng bao giờ nghĩ rằng áo sơ mi trắng phải “sánh duyên” cùng quần tây, giày công sở thì mới đẹp. Phái nữ vẫn luôn ngưỡng mộ những chàng trai biết cách biến tấu trang phục sành điệu.</p><p>Vậy nên, đừng ngần ngại ghép đôi áo sơ mi trắng với quần Short. Cách mix đồ này hoàn toàn không nên sơ vin mà hãy bỏ áo sơ mi ra ngoài quần. Bộ trang phục này sẽ mang đến cho bạn một diện mạo khỏe khoắn và trông thật thời thượng.</p><p><i>Chàng trông thật bảnh với áo sơ mi trắng phối cùng quần Short</i></p><p><i>Cá tính, năng động, trẻ trung khi kết hợp quần Short và áo sơ mi trắng</i></p><p><i>​</i></p><p><i><strong>​</strong></i><strong>Một số quy tắc khi lựa chọn áo sơ mi trắng</strong></p><p>Việc mua áo sơ mi trắng không chỉ đơn giản là bạn chọn một chiếc áo vừa mắt. Còn “hàng tá” chi tiết mà bạn phải xem xét nữa đấy! Hãy áp dụng ngay những kinh nghiệm sau để chọn được những chiếc áo sơ mi ưng ý nhất.</p><ul><li><i>Quy tắc ngón tay</i></li></ul><p>Cổ áo là chỉ tiết “nhỏ nhưng có võ” lại ít được người mua để ý đến. Bạn không nên “rinh” về nhà những chiếc áo sơ mi có cổ áo quá chật hoặc quá rộng. Hãy áp dụng “quy tắc ngón tay” để chọn được chiếc áo vừa vặn nhất.</p><p>Cách kiểm tra đơn giản: Bạn chỉ cần cài hết cúc áo lại, rồi cho ngón tay trỏ vào khe hở giữa cổ áo sơ mi nam và cổ. Nếu thấy vừa vặn thì đích thị đây là chiếc áo sơ mi dành cho bạn.</p><p><i>Hãy áp dụng quy tắc ngón tay khi mua áo sơ mi trắng</i></p><ul><li><i>Chọn độ dài tay áo phù hợp</i></li></ul><p>Đừng để chiếc tay áo quá dài khiến bạn trông luộm thuộm trong mắt người đối diện. Hãy áp dụng ngay nguyên tắc sau:</p><p><i>Thứ nhất</i>, khi chọn áo sơ mi dài tay để phối cùng vest. Bạn phải đảm bảo phần cổ tay áo sơ mi nam bên trong lộ ra khoảng 1.5 đến 2cm. Đây là độ dài phù hợp nhất để mang đến cho bạn sự lịch lãm.</p><p><i>Thứ hai</i>, khi chọn áo sơ mi trắng nam dài tay. Bạn nên chọn chiều dài từ cổ tay áo vừa chạm đến vị trí&nbsp; giao nhau giữa ngón cái và ngón trỏ. Đây là chiều dài phù hợp bởi khi bạn gập khuỷu tay để lấy đồ, phần cổ tay áo sẽ không bị thu ngắn “quá lố” về phía trên cổ tay.</p><p><i>Một chiếc áo sơ mi có độ dài tay áo phù hợp sẽ mang lại cho chàng phong cách lịch lãm và đứng đắn</i></p><ul><li><i>Chọn chiều rộng áo vừa vặn</i></li></ul><p>Nhiều người có thói quen chọn những chiếc áo sơ mi phom suông để “giấu nhẹm” khuyết điểm cơ thể. Tuy nhiên, đây là quan niệm sai lầm, mặc như vậy chỉ khiến thân hình bạn trông lọt thỏm trong chiếc áo. Một chiếc áo vừa vặn luôn là lựa chọn hoàn hảo cho mọi hình thể. Hãy tập thói quen hóp bụng, thẳng lưng dù đứng hay ngồi, trông bạn sẽ bảnh trai và quyến rũ hơn đấy!</p><p><i>Chiếc áo sơ mi vừa vặn sẽ giúp phái mạnh trông bảnh bao hơn</i></p><ul><li><i>Lựa chọn chất liệu vải tốt</i></li></ul><p>Để may áo sơ mi, các chất liệu cotton, vải tổng hợp, lanh và lụa luôn là lựa chọn phổ biến. Trong đó Cotton luôn là chất liệu được ưu ái hàng đầu để may áo sơ mi. Bởi chúng thấm hút mồ hôi tốt và có giá thành phù hợp với túi tiền của nhiều người.</p><p>Sự lựa chọn tiếp theo sẽ là vải tổng hợp với ưu điểm ít nhăn, chống bám bụi và màu sắc bóng đẹp. Còn nếu bạn có điều kiện hơn, hãy chọn chất liệu lanh và lụa. Chúng luôn giúp người mặc toát lên nét sang trọng và lịch lãm. Tuy nhiên, chất liệu lanh và lụa bị một điểm trừ đáng tiếc là chúng rất dễ bị nhăn nếu bạn giặt và bảo quản không khéo.</p><p>Với những kiểu&nbsp;phối đồ với áo sơ mi trắng&nbsp;ở trên,&nbsp;TONY4MEN&nbsp;tin rằng mỗi chàng trai sẽ thêm phần tự tin để thể hiện phong cách thời trang của mình. Hãy mạnh dạn thử sức để F5 lại guu ăn mặc của cả tuần nhé. Chúc các bạn luôn mặc đẹp mỗi ngày !</p>"
+    },
+    {
+      "id": 2,
+      "title": "Trở thành chàng trai ",
+      "description": "Các cô gái lúc nào cũng rần rần trước vẻ soái ca của các anh chàng ca sĩ, diễn viên Hàn Quốc hẳn đôi lúc cũng khiến cánh đàn ông đôi lúc cũng “chột dạ”. Bí quyết không chỉ nằm ở khuôn mặt sáng bừng cùng...",
+      "image": "https://firebasestorage.googleapis.com/v0/b/shop-135a8.appspot.com/o/images%2Farticle_1557650131_906.jpg?alt=media&token=808238f8-199d-438f-ba95-073863004558",
+      "name": "NguyenDuyVietAnh",
+      "content": "<p>Các cô gái lúc nào cũng rần rần trước vẻ soái ca của các anh chàng ca sĩ, diễn viên Hàn Quốc hẳn đôi lúc cũng khiến cánh đàn ông đôi lúc cũng “chột dạ”. Bí quyết không chỉ nằm ở khuôn mặt sáng bừng cùng nụ cười chết người mà còn ở phong cách&nbsp;<a href=\"https://showbizvn.com/thoi-trang/\">thời trang</a>&nbsp;nam Hàn Quốc của họ. Đừng quá lo lắng để có ĐỘC ở đây rồi&nbsp;dù không phải là “nam thần” xứ Hàn thì bạn cũng phải khiến mọi cô gái phải ngước nhìn.</p><p>&nbsp;</p><h2><strong>1. Áo sơ mi</strong></h2><p>Vẻ soái ca của các anh chàng Hàn Quốc chắc chắn được tạo ra từ vẻ lịch lãm, sang trọng của những chiếc áo sơ mi. Đúng là dù bạn theo đuổi phong cách&nbsp;<a href=\"https://showbizvn.com/thoi-trang/\">thời trang</a>&nbsp;gì thì áo sơ mi là món đồ phải có của mọi anh chàng. Nhưng áo sơ mi trong thời trang nam Hàn Quốc thì không đơn thuần là những mẫu áo bạn thường bắt gặp. Nếu những chàng Tây thường chuộng những kiểu sơ mi màu tối với phom dáng phóng khoáng nhằm mang lại vẻ mạnh mẽ, cá tính thì ngược lại, vẻ lung linh của trai Hàn được tạo nên từ gam màu pastel ngọt ngào của áo.</p><figure class=\"image\"><img src=\"https://storage.googleapis.com/cdn.nhanh.vn/store/8901/artCT/46561/screenshot_7.jpg\" alt=\"\"></figure><p><i>Thay vì xắn cao phần tay áo và mở những nút áo trên cùng để khoe khuôn ngực nở nang như Tây thì bạn nên xắn áo dưới khuỷu tay, sơ vin gọn gàng để tạo nét nghiêm túc và nhã nhặn</i></p><figure class=\"image\"><img src=\"https://storage.googleapis.com/cdn.nhanh.vn/store/8901/artCT/46561/screenshot_14.jpg\" alt=\"\"></figure><figure class=\"image\"><img src=\"https://storage.googleapis.com/cdn.nhanh.vn/store/8901/artCT/46561/screenshot_13.jpg\" alt=\"\"></figure><p>&nbsp;</p><p>Sự tự tin sẽ đến với bạn nếu bạn mix đồ theo phong cách ”&nbsp;<strong>quần jean với áo sơ mi</strong>&nbsp;” &nbsp;và bạn đừng lo lắng về vẻ đẹp của nó.</p><p>Đầu tiên phải nói đến khi bạn kết hợp phong cách như vậy sẽ làm con người bạn trở lên lịch lãm trước mắt mọi người.</p><p>Chưa hết đâu ! bạn hãy thử tưởng tượng khi bạn mix theo phong cách này lên người sẽ như thế nào . Nếu là mình mình sẽ cười tủm cả ngày ” hề hề ”</p><p>Để chứng minh mình không nói sai sau đây là một số hình ảnh khiến bạn chết mê ngay từ cái nhìn đầu tiên ! nào cùng ngắm thôi !</p><figure class=\"image\"><img src=\"https://storage.googleapis.com/cdn.nhanh.vn/store/8901/artCT/46561/screenshot_6.jpg\" alt=\"\"></figure><figure class=\"image\"><img src=\"https://storage.googleapis.com/cdn.nhanh.vn/store/8901/artCT/46561/screenshot_8.jpg\" alt=\"\"></figure><figure class=\"image\"><img src=\"https://storage.googleapis.com/cdn.nhanh.vn/store/8901/artCT/46561/screenshot_21.jpg\" alt=\"\"></figure><p>&nbsp;</p><p>&nbsp;</p><p><strong>2. Áo thun</strong></p><p>Đối với nam giới ưa chuộng phong cách thời trang mang hơi hướng Hàn Quốc thì&nbsp;áo thun không thể thiếu trong tủ đồ của bạn. Đây là món&nbsp;đồ mang đến cho bạn sự thoải mái, trẻ trung, cá tính và vô cùng năng động. Áo thun nam có nhiều cách phối đồ cho nam tạo nên nhiều phong cách và nhiều gu thời trang riêng biệt dựa theo kiểu dáng, chất liệu và màu sắc bạn chọn.</p><p>Cùng ngắm nhìn một số món áo phông của Độc nhé</p><figure class=\"image\"><img src=\"https://storage.googleapis.com/cdn.nhanh.vn/store/8901/artCT/46561/screenshot_28.jpg\" alt=\"\"></figure><figure class=\"image\"><img src=\"https://storage.googleapis.com/cdn.nhanh.vn/store/8901/artCT/46561/screenshot_23.jpg\" alt=\"\"></figure><figure class=\"image\"><img src=\"https://storage.googleapis.com/cdn.nhanh.vn/store/8901/artCT/46561/screenshot_26.jpg\" alt=\"\"></figure><figure class=\"image\"><img src=\"https://storage.googleapis.com/cdn.nhanh.vn/store/8901/artCT/46561/screenshot_27.jpg\" alt=\"\"></figure><p>&nbsp;</p><h2><strong>3. Giày thể thao màu trắng</strong></h2><p>Tiếp tục là một điểm khác biệt hoàn toàn giữa thời trang nam Hàn Quốc và các phong cách thời trang khác: giày thể thao màu trắng.</p><figure class=\"image\"><img src=\"https://storage.googleapis.com/cdn.nhanh.vn/store/8901/artCT/46561/screenshot_15.jpg\" alt=\"\"></figure><p>Giày thể thao hẳn sẽ mang lại nét năng động, cá tính cho người mặc nhưng tông màu trắng sẽ là điểm trung hòa, giúp tổng thể không quá đứng đắn mà vẫn giữ được vẻ trang nhã chủ đạo. Ngoài ra, giày thể thao còn phù hợp với rất nhiều loại trang phục và màu sắc, cho bạn thoải mái phối đồ và phối màu tùy thích.</p><figure class=\"image\"><img src=\"https://storage.googleapis.com/cdn.nhanh.vn/store/8901/artCT/46561/screenshot_16.jpg\" alt=\"\"></figure><p><i>Nếu theo đuổi vẻ thanh lịch của phong cách thời trang nam Hàn Quốc, tủ đồ của bạn sẽ không thể thiếu những đôi giày thể thao trắng tinh</i></p><p>&nbsp;</p><p>Quá tuyệt vời đúng không nào ? Vậy còn lo lắng gì nữa hãy đi ra ĐỘC&nbsp;sắm cho mình một bộ đồ theo phong cách hàn quốc này ngay thôi nào. Và mình hy vọng các chàng sẽ tìm và phối cho mình một phong cách chuẩn, đẹp nhất để bộ lộ lên vẻ đẹp của bạn. Thân !</p>"
+    },
+    {
+      "id": 3,
+      "title": "Hướng dẫn mua hàng tại XShop",
+      "description": "Với những khách hàng mua hàng tại SHOP cũng như chuyển hàng ship đc đổi hàng trong 72h  (những lỗi hỏng khi đến mua trực tiếp đã mang về -shop sẽ không nhận đổi lại)...",
+      "image": "https://firebasestorage.googleapis.com/v0/b/shop-135a8.appspot.com/o/images%2Farticle_1558322798_593.jpg?alt=media&token=ec20c9e2-49c3-47f1-b6b8-684509fd71f0",
+      "name": "Admin",
+      "content": "<p><strong>( Nhận ship với đơn &gt;150K, Freeship với đơn hàng &gt;495K )&nbsp;</strong></p><p><strong>1. Khu vực Hà Nội: â</strong></p><p><i>&nbsp;&nbsp;&nbsp;&nbsp; * &nbsp; Với các bạn ở HN có thể đến trực tiếp cửa hàng 110 Phố Nhổn, 326 Cầu Giấy,&nbsp;154 Quang Trung (mở cửa từ &nbsp;8:30&nbsp;am- 22:30 pm) để giao dịch trực tiếp.&nbsp;</i></p><p><i>&nbsp;&nbsp;&nbsp;&nbsp; * &nbsp;Các bạn ở HN nhưng không có có điều kiện qua xem trực tiếp có thể liên hệ với bên mình để đc vận chuyển và thanh toán trực tiếp tại nhà bằng cách inbox trực tiếp fb hoặc chat trực tiếp trên website Shop:&nbsp;</i><a href=\"https://shopdoc.vn/\"><i>https://shopdoc.vn/</i></a></p><p><i>(Địa chỉ vs số đt người nhận +&nbsp;</i>Mẫu áo +Mầu áo+ size hoặc chiều cao cân nặng<i>&nbsp;--&gt;inbox tại </i><a href=\"https://www.facebook.com/ShopDoc123/\"><i>https://www.facebook.com/ShopDoc123/</i></a><i> hoặc gửi đơn hàng trên web&nbsp;)</i></p><p><i>(Giá trị thanh toán &nbsp;= giá trị hàng + 30K tiền phí ship tùy theo cân nặng)</i></p><p><i><strong>Khoảng 1-3 ngày các bạn sẽ nhận được hàng !</strong></i></p><p><strong>2. Khu vực các tỉnh khác ko phải HN &nbsp;&nbsp;</strong><br><br>*&nbsp;<i>Với các bạn ở TP hoặc Thị Xã thì cac bạn inbox trực tiếp cho Shop: Mã sp + mầu + size ( hoặc chiều cao cân nặng ) + địa chỉ liên hệ và số đt của bạn . Khi nhận đc tin nhắn inbox Shop sẽ trưc tiếp liên hệ lại để xác nhận đơn hàng với các bạn rồi chuyển hàng thanh toán COD (Thanh toán trực tiếp khi giao nhận hàng - phí 40K )&nbsp;</i></p><p>&nbsp;</p><p><strong>Cách thức thanh toán chuyển khoản&nbsp;</strong></p><blockquote><p><i>&nbsp; &nbsp;Bước 1:&nbsp;Thông tin sản phẩm</i></p><p>&nbsp; &nbsp; &nbsp;- &nbsp;Các bạn inbox trưc tiếp trên fb:&nbsp;<a href=\"https://www.facebook.com/ShopDoc123/\"><strong>https://www.facebook.com/ShopDoc123/</strong></a></p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;(mục tin nhắn ) để hỏi thông tin sp mẫu mã đó còn hay hết hàng .<br>&nbsp; &nbsp; &nbsp;- &nbsp;Hoặc chát trưc tuyến trên Web site Shop :<strong>&nbsp;</strong><a href=\"https://shopdoc.vn/\"><strong>https://shopdoc.vn/</strong></a></p><p><i>&nbsp; Bước 2:&nbsp;&nbsp;Chuyển khoản vào tài khoản Chủ tài khoản: LÊ THIÊN LINH</i></p><p><i>+ Techcombank : 19030692849555 ( Chi nhánh Từ Liêm&nbsp;HN)</i></p><p>&nbsp; &nbsp;==&gt;<i><strong>&nbsp;Sau khi chuyển khoản các bạn có thể chụp lại ảnh hoá đơn rồi gửi inbox cho Shop để Shop chuyển hàng sớm cho bạn .&nbsp;</strong></i></p><p><i><strong>Khoảng 3-5 ngày là hàng đến nơi (Nếu các bạn ở TP- còn ở Huyện sẽ chậm hơn 1-2ngày )! &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</strong></i><br><i><strong>&nbsp; &nbsp; (trừ T7 - Chủ Nhật bên vận chuyển nghỉ&nbsp;</strong></i></p><p>&nbsp;</p><p><strong>Quyền lợi khách hàng</strong></p><p><i>*Với những khách hàng mua hàng tại SHOP cũng như chuyển hàng ship đc đổi hàng trong 72h &nbsp;(những lỗi hỏng khi đến mua trực tiếp đã mang về -shop sẽ không nhận đổi lại). (Chúng tôi không áp dụng đổi trả cho các bạn đến trực tiếp mua hàng với những lỗi bị rách hay bị lỗi ...vì vậy mong các bạn ktra kĩ trc khi mua )</i></p></blockquote>"
+    },
+    {
+      "id": 4,
+      "title": "Chính sách đổi hàng tại Xshop",
+      "description": "Trong vòng 3 ngày kể từ ngày mua sản phẩm.\nÁp dụng đối với sản phẩm nguyên giá và sản phẩm giảm giá, và chỉ được đổi 01 lần...\n",
+      "image": "https://firebasestorage.googleapis.com/v0/b/shop-135a8.appspot.com/o/images%2Farticle_1558322859_266.jpg?alt=media&token=e90e4d59-c13c-46a0-b05c-c1212a68f05a",
+      "name": "AdminFake",
+      "content": "<h3><strong>I. QUY ĐỊNH ĐỔI HÀNG ONLINE</strong></h3><h3><strong>1. Chính sách áp dụng</strong></h3><ul><li>Áp dụng 01 lần đổi/01 đơn hàng</li><li>Không áp dụng đổi với sản phẩm phụ kiện và đồ lót</li><li>Sản phẩm nguyên giá được đổi sang sản phẩm nguyên khác còn hàng tại website có giá trị bằng hoặc lớn hơn (KH bù thêm chênh lệch nếu lớn hơn)</li><li>Không hỗ&nbsp;trợ đổi các sản phẩm giảm giá/khuyên mại</li></ul><p>&nbsp; &nbsp; &nbsp;<strong>2. Điều kiện đổi sản phẩm</strong></p><ul><li>Đổi hàng trong vòng 3 ngày kể từ ngày khách hàng nhận được sản phẩm.</li><li>Sản phẩm còn nguyên tem, mác và chưa qua sử dụng</li></ul><p>&nbsp; &nbsp;<strong> &nbsp;3. Thực hiện đổi sản phẩm</strong></p><ul><li>Bước 1: Liên hệ fanpage&nbsp;<a href=\"https://www.facebook.com/ShopDoc123/\">https://www.facebook.com/ShopDoc123/</a>&nbsp;để xác nhận đổi hàng</li><li>Bước 2: Gửi hàng về địa chỉ Kho Nhà văn hóa thôn lũng kênh - Đức Giang _ Hoài Đức _ Hà Nội</li><li>Bước 3: SHOP ĐỘC&nbsp;gửi đổi sản phẩm mới khi nhận được hàng. Trong trường hợp hết hàng, &nbsp;SHOP ĐỘC sẽ liên hệ xác nhận.</li></ul><p>Lưu ý:</p><ul><li>Kho online không nhận giữ hàng trong thời gian khách hàng gửi sản phẩm về để đổi hàng.</li></ul><p><strong>&nbsp;II. QUY ĐỊNH ĐỔI SẢN PHẨM MUA TẠI CỬA HÀNG</strong></p><h3><strong>1. Phạm vi đổi hàng</strong></h3><ul><li>Tất cả các cơ sở của shop</li></ul><p>&nbsp; &nbsp; &nbsp;<strong>2. Điều kiện đổi hàng</strong></p><ul><li>Trong vòng 3 ngày kể từ ngày mua sản phẩm.</li><li>Áp dụng đối với sản phẩm nguyên giá và sản phẩm giảm giá, và&nbsp;<strong>chỉ được đổi 01 lần duy nhất</strong>.</li><li>Sản phẩm nguyên giá được đổi sang sản phẩm nguyên giá khác và không thấp hơn giá trị sản phẩm đã mua.</li><li>Không hỗ&nbsp;trợ đổi các sản phẩm giảm giá/khuyên mại</li><li>Chính sách chỉ áp dụng khi sản phẩm còn hóa đơn mua hàng, còn nguyên nhãn mác, thẻ bài đính kèm sản phẩm và sản phẩm không bị dơ bẩn, hư hỏng bởi những tác nhân bên ngoài cửa hàng sau khi mua sản phẩm.</li><li>Sản phẩm đồ lót và phụ kiện&nbsp; không được đổi.</li><li><strong>Giá trị sản phẩm đổi : bằng hoặc cao hơn giá trị sản phẩm đã mua trước đó</strong></li></ul><p>&nbsp;<strong> &nbsp; &nbsp;3. Lưu ý</strong></p><ul><li>Trường hợp đổi SP hôm trước mua là nguyên giá, hôm sau giảm giá, thì áp dụng chính sách như đổi sản phẩm nguyên giá.</li><li>Quý khách vui lòng kiểm tra sản phẩm và hóa đơn trước khi ra về và tham khảo hướng dẫn bảo quản sản phẩm trước khi sử dụng.</li></ul><p>&nbsp;</p><p>Mọi thắc mắc về quy định chung tại cửa hàng vui lòng liên hệ hotline: <strong>0968959050&nbsp;</strong>để được hỗ trợ nhanh nhất</p>"
+    },
+    {
+      "id": 5,
+      "title": "Chính sách vận chuyển tại Xshop",
+      "description": "Miễn phí giao hàng với tất cả đơn hàng có giá trị từ 495,000 vnđ trở lên tại tất cả tỉnh thành trên toàn quốc. ....",
+      "image": "https://firebasestorage.googleapis.com/v0/b/shop-135a8.appspot.com/o/images%2Farticle_1558322859_266.jpg?alt=media&token=45945bda-f071-494b-a1e0-099fb8844eea",
+      "name": "Admin2",
+      "content": "<p><strong>1. CƯỚC PHÍ VẬN CHUYỂN</strong></p><ul><li>Miễn phí giao hàng với tất cả đơn hàng có giá trị từ 495,000 vnđ trở lên tại tất cả tỉnh thành trên toàn quốc.</li></ul><figure class=\"table\"><table><tbody><tr><td colspan=\"2\">HÀ NỘI</td></tr><tr><td>Đống Đa, Hoàn Kiếm, Ba Đình, Hai Bà Trưng, Cầu Giấy, Thanh Xuân</td><td>30.000đ</td></tr><tr><td>Hà Đông, Tây Hồ, Hoàng Mai, Long Biên, Bắc Từ Liêm, Nam Từ Liêm, Ba Vì, Chương Mỹ, Đan Phượng, Đông Anh, Gia Lâm, Hoài Đức, Mê Linh, Mỹ Đức, Phúc Thọ, Phú Xuyên, Quốc Oai, Sóc Sơn, Thạch Thất, Thanh Oai, Thanh Trì, Thường Tín, Ứng Hòa, Thị Xã Sơn Tây.</td><td>30.000đ</td></tr><tr><td colspan=\"2\">TP HỒ CHÍ MINH</td></tr><tr><td>Tất cả các quận</td><td>40.000đ</td></tr><tr><td colspan=\"2\">ĐÀ NẴNG</td></tr><tr><td>Tất cả các quận</td><td>40.000đ</td></tr><tr><td colspan=\"2\">TẤT CẢ CÁC TỈNH THÀNH KHÁC</td></tr><tr><td>Bắc Giang, Bắc Ninh, Hà Nam, Hải Dương, Hải Phòng, Hưng Yên, Hòa Bình, Nam Định, Phú Thọ, Thái Nguyên, Vĩnh Phúc, Hòa Bình,Bắc Kan, Lạng Sơn, Nghệ An, Ninh Bình, Quảng Ninh, Thái Bình, Thanh Hóa, Tuyên Quang, Yên Bái, Nghệ An</td><td>40.000đ</td></tr><tr><td>Điện Biên, Lào Cai, Hà Giang, Sơn La, Cao Bằng,Huế, Quảng Trị, Gia Lai, Đắc Lắc, Kom Tum, Đắc Nông, Phú Yên, Khánh Hòa, Hà Tình, Tiền Giang, Bến Tre, Tây Ninh, Đồng Tháp, Trà Vinh, Vĩnh Long, Đồng Nai, Bình Dương, Vũng Tàu, Long An, Quảng Bình, Quy Nhơn, Bình Thuận, Ninh Thuận, Bình Phước, Cần Thơ, Hậu Giang, Kiên Giang, An Giang, Long An, Sóc Trăng, Bạc Liêu, Cà Mau, Quảng Ngãi</td><td>&nbsp;</td></tr></tbody></table></figure><p><strong>3. THỜI GIAN VẬN CHUYỂN</strong></p><ul><li>Tuyến nội thành Hà Nội: giao hàng khoảng 1-2 ngày</li><li>Tuyến ngoại thành Hà Nội: giao hàng khoảng 2-3 ngày</li></ul><p><strong>4. ĐƠN HÀNG ĐƯỢC GIAO TỐI ĐA MẤY LẦN ?</strong></p><ul><li>Đơn hàng được giao tối đa 3 lần (Nếu lần 1 đơn hàng giao không thành công, nhân viên vận chuyển sẽ liên hệ lại bạn lần 2 sau 1-2 ngày làm việc kế tiếp . Như vậy sau 3 lần giao dịch không thành công đơn hàng sẽ hủy.&nbsp; 4. KiỂM TRA TÌNH TRẠNG ĐƠN HÀN</li><li>Để kiểm tra thông tin hoặc tình trạng đơn hàng bạn vui lòng liên hệ với bộ phận chăm sóc khách hàng trên Fanpage</li></ul><p><strong>5. KiỂM TRA TÌNH TRẠNG ĐƠN HÀNG</strong></p><ul><li>Để kiểm tra thông tin hoặc tình trạng đơn hàng bạn vui lòng liên hệ với bộ phận chăm sóc khách hàng trên Fanpage</li></ul><p><strong>6. KHI NHẬN ĐƠN HÀNG CÓ ĐƯỢC XEM SẢN PHẨM TRƯỚC KHI THANH TOÁN ?</strong></p><ul><li>Bạn hoàn toàn có thể mở gói hàng kiểm tra sản phẩm trước khi thanh toán hoặc trước khi vận chuyển rời đi.</li><li>Trong trường hợp bạn gặp vấn đề phát sinh bạn liên hệ ngay đến chúng tôi 0968959050 để được hỗ trợ kịp thời.</li></ul>"
+    },
+    {
+      "id": 6,
+      "title": "Hướng dẫn chọn size",
+      "description": "Giàng quần là phần từ đũng quần đến hết gấu, tương ứng với độ dài của chân. Tùy thuộc vào độ dài chân để khách hàng lựa chọn size giàng quần. Có thế người thấp nhưng chân dài và ngược lại. ....",
+      "image": "https://firebasestorage.googleapis.com/v0/b/shop-135a8.appspot.com/o/images%2Farticle_1558322874_827.jpg?alt=media&token=a1613f2b-39c8-4408-9f62-90a7dd13b26a",
+      "name": "NguyenDuyVietAnh",
+      "content": "<p><strong>Bảng thông số chung</strong></p><figure class=\"table\"><table><tbody><tr><td>Size</td><td>S</td><td>M</td><td>L</td><td>XL</td></tr><tr><td>Chiều cao</td><td>165-167</td><td>168-170</td><td>170-173</td><td>173-176</td></tr><tr><td>Cân nặng</td><td>55-60 kg</td><td>60-65 kg</td><td>66-70 kg</td><td>70-76 kg</td></tr><tr><td>Vòng ngực</td><td>86-90</td><td>90-94</td><td>94-98</td><td>98-102</td></tr><tr><td>Vòng eo</td><td>68-72</td><td>72-76</td><td>76-80</td><td>80-84</td></tr><tr><td>Vòng mông</td><td>88-92</td><td>92-96</td><td>96-100</td><td>100-104<br>&nbsp;</td></tr></tbody></table></figure><p>&nbsp;</p><p><strong>Bảng chọn size riêng cho quần âu</strong></p><figure class=\"table\"><table><tbody><tr><td>Size</td><td>S</td><td>M</td><td>L</td><td>XL</td></tr><tr><td>Vòng bụng</td><td>68-72</td><td>72-76</td><td>76-80</td><td>80-84</td></tr><tr><td>Vòng mông</td><td>88-92</td><td>92-96</td><td>96-100</td><td>100-104</td></tr><tr><td>Rộng ống (slim)</td><td>16.5</td><td>17</td><td>17.5</td><td>18</td></tr><tr><td>Rộng ống (regular)</td><td>17.5</td><td>18</td><td>18.5</td><td>19</td></tr><tr><td>Dài quần</td><td>103</td><td>104</td><td>105</td><td>106</td></tr></tbody></table></figure><p>&nbsp;</p><p><strong>Bản chọn size quần Jeans&amp; Kaki</strong></p><figure class=\"table\"><table><tbody><tr><td>Size</td><td>29</td><td>30</td><td>31</td><td>32</td><td>33</td><td>34</td></tr><tr><td>Rộng eo</td><td>77.5</td><td>80</td><td>82.5</td><td>84.5</td><td>87.5</td><td>89.5</td></tr><tr><td>Rộng mông</td><td>96.5</td><td>99</td><td>101.5</td><td>104</td><td>106</td><td>108</td></tr><tr><td>Dài giàng (30\")</td><td>76</td><td>76</td><td>76</td><td>76</td><td>76</td><td>76</td></tr><tr><td>Dài giàng (31\")</td><td>78.5</td><td>78.5</td><td>78.5</td><td>78.5</td><td>78.5</td><td>78.5</td></tr><tr><td>Dài giàng (32\")</td><td>81</td><td>81</td><td>81</td><td>81</td><td>81</td><td>81</td></tr><tr><td>Rộng gấu (slim)</td><td>16</td><td>16.5</td><td>17</td><td>17.5</td><td>18</td><td>18.5</td></tr><tr><td>Rộng gấu&nbsp;(Regular)</td><td>17.5</td><td>18</td><td>18.5</td><td>19</td><td>19.5</td><td>20</td></tr></tbody></table></figure><p>*** Giàng quần là phần từ đũng quần đến hết gấu, tương ứng với độ dài của chân. Tùy thuộc vào độ dài chân để khách hàng lựa chọn size giàng quần. Có thế người thấp nhưng chân dài và ngược lại.<br>Cụ thể hiện nay SHOP ĐỘC&nbsp;đang sử dụng 2 hệ giàng quần 30 (tương ứng với dài chân = 76cm); giàng quần 32 (tương ứng với dài chân = 81cm)&nbsp;<br>&nbsp;</p><p><strong>Bảng chọn size riêng cho&nbsp; áo khoác</strong></p><figure class=\"table\"><table><tbody><tr><td>Size</td><td>S</td><td>M</td><td>L</td><td>XL</td></tr><tr><td>Rộng vai</td><td>40-42</td><td>42-44</td><td>44-46</td><td>46-48</td></tr><tr><td>Dài áo</td><td>70.5</td><td>72.5</td><td>74.5</td><td>75.5</td></tr><tr><td>Vòng ngực</td><td>86-90</td><td>90-94</td><td>94-98</td><td>98-102</td></tr><tr><td>Dài tay</td><td>62.5</td><td>64</td><td>65.5</td><td>66.5</td></tr><tr><td>Vòng mông</td><td>88-92</td><td>92-96</td><td>96-100</td><td>100-104</td></tr></tbody></table></figure><p>&nbsp;</p><figure class=\"table\"><table><tbody><tr><td>Size</td><td>Vị trí đo</td><td>S</td><td>M</td><td>L</td><td>XL</td></tr><tr><td rowspan=\"4\">Sịp nam</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>1/2 rộng cạp</td><td>32.5</td><td>34</td><td>35.5</td><td>37</td></tr><tr><td>1/2 rộng ống sịp đùi</td><td>21.5</td><td>22.5</td><td>23.5</td><td>24.5</td></tr><tr><td>1/2 rộng ống sịp tam giác</td><td>19</td><td>20</td><td>21</td><td>22</td></tr></tbody></table></figure><p><br><strong>Bảng chọn size giầy</strong></p><p>Cách tính Lấy chiều dài chân + 1.5cm = size giầy</p><figure class=\"table\"><table><tbody><tr><td>Chiều dài chân</td><td>24.1</td><td>25</td><td>25.8</td><td>26.6</td><td>27.5</td><td>28.4</td><td>29.2</td></tr><tr><td>Size</td><td>38</td><td>39</td><td>40</td><td>41</td><td>42</td><td>44</td><td>44</td></tr></tbody></table></figure>"
+    }
+  ]
+}

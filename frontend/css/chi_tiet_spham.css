@@ -1,0 +1,88 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0px auto;
+    padding: 0px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.chitiet{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 460px 1fr;
+}
+.chitiet h1{
+    color: red;
+}
+.ul-size{
+    display : flex ; 
+    margin-top: -45px;
+  }
+  .ul-size li{
+    display: block;
+    text-align: center;
+    width:35px ; 
+    height: 35px ; 
+    border: 1px solid#CCCCCC ;
+    margin-right: 15px;
+    padding-top: 6px;
+    cursor: pointer;
+  }
+.ul-size li:hover{
+    border: 1px solid #333 ;
+}
+.mua1{
+    width: 170px;
+    background-color: black;
+    border: none;
+    padding: 11px;
+    text-align: center;
+    color: white;
+    margin-right: 16px;
+}
+.mua2{
+    width: 120px;
+    background-color: black;
+    border: none;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+.muangay button:hover{
+    background-color: #2F4F4F;
+}
+.chinhsach{
+    margin-top: 30px;
+}
+.chinhsach p{
+    font-size: 13px;
+    color: rgb(88,89,91);
+}
+.binhluan{
+    margin-top: 30px;
+    
+}
+
+.abc{
+    text-align: center;
+}
+.spham{
+    text-align: center;
+}
+.spham a{
+    text-decoration: none;
+    color: black;
+}
+.spham a:hover{
+    text-decoration: none;
+    color: red;
+}
+.splienquan{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-right: 50px;
+    grid-gap: 15px;
+    margin-top: 30px;
+   
+}
+
