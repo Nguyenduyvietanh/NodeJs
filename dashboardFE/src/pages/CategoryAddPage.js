@@ -34,14 +34,15 @@ const CategoryAddPage = {
             $('#validate-name').innerHTML = '';
             $('#validate-name').style.color = '';
             $('#category-name').style.borderColor = '';
-            const { data: categories } = await CategoryAPI.getAll();
             const category = {
-                id: categories.length + 1,
                 name: $('#category-name').value,
             }
-            CategoryAPI.add(category);
-            alert('Thêm mới danh mục thành công');
-            window.location.href = '/'
+            console.log(category, 'category');
+            const result = await CategoryAPI.add(category);
+            if (result.status === 200) {
+                alert('Thêm mới danh mục thành công');
+                window.location.href = '/'
+            }
         })
     },
 }

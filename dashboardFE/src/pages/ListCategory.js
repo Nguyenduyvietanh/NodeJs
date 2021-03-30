@@ -3,7 +3,7 @@ import { $ } from '../utils';
 
 const ListCategory = {
     async render() {
-        const { data: categories } = await CategoryAPI.getAll();
+        const { data: { categories } } = await CategoryAPI.getAll();
 
         return  /*html*/`
         <h1 style= "text-align: center; color: red;"> Danh Sách Danh Mục </h1>
@@ -27,11 +27,11 @@ const ListCategory = {
                         ${categories.map(category => {
             return `
                                 <tr>
-                                    <td>${category.id}</td>
+                                    <td>${category._id}</td>
                                     <td><p>${category.name}</p></td>
                                     <td>
                                         <a href="/#/updatecategory/${category.id}" class="btn btn-primary">Update</a>
-                                        <button class="btn btn-danger btn-remove remove-product" data-id="${category.id}">Remove</button>
+                                        <button class="btn btn-danger btn-remove remove-product" data-id="${category._id}">Remove</button>
                                     </td>
                                 </tr>
                             `

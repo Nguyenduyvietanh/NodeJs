@@ -2,7 +2,7 @@ import CategoryAPI from "../api/categoryAPI.js"
 
 const Header = {
     async render() {
-        const { data: categories } = await CategoryAPI.getAll();
+        const { data: { categories } } = await CategoryAPI.getAll();
         return `
             ${categories.map(category => {
             return `

@@ -3,12 +3,19 @@ import { update, list, create, productById, read, remove } from "../controllers/
 
 const router = express.Router();
 
-router.post('/products', create);
-router.get('/products', list);
-router.get('/product/:productId', read);
-router.put('/product/:productId', update)
+//add product
+router.post("/products", create);
+
+//list product
+router.get("/products", list);
+
+//update product
+router.put("/products/:productId", update);
+
 //delete product
-router.delete('/product/:productId', remove);
+router.delete("/products/:productId", remove);
+
 //detail product
-router.param('productId', productById);
+router.param("productId", productById);
+router.get("/product/:productId", read);
 module.exports = router;

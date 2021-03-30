@@ -5,7 +5,7 @@ import { $ } from '../utils';
 const ProductsPage = {
     async render() {
         const { data: products } = await ProductApi.getAll();
-        const { data: categories } = await CategoryAPI.getAll();
+        const { data: { categories } } = await CategoryAPI.getAll();
         return /*html*/`
         <h1 style= "text-align: center; color: red;"> Danh Sách Sản Phẩm </h1>
         <div id="list-products">
@@ -32,7 +32,7 @@ const ProductsPage = {
                     ${products.map(product => {
             return `
                             <tr>
-                                <td>${product.id}</td>
+                                <td>${product._id}</td>
                                 <td><p>${product.name}</p></td>
                                 <td>${product.price}</td>
                                 <td><img src="${product.image}" style="width:70px; height: 70px; "  alt=""></td>  
@@ -41,8 +41,8 @@ const ProductsPage = {
             }).join(' ')}</td>
                                 <td>${product.quantity}</td>
                                 <td>
-                                    <a href="/#/editproduct/${product.id}" class="btn btn-primary">Update</a>
-                                    <button class="btn btn-danger btn-remove remove-product" data-id="${product.id}">Remove</button>
+                                    <a href="/#/editproduct/${product._id}" class="btn btn-primary">Update</a>
+                                    <button class="btn btn-danger btn-remove remove-product" data-id="${product._id}">Remove</button>
                                 </td>
                             </tr>
                         `

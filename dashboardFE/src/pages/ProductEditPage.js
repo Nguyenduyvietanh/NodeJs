@@ -8,7 +8,7 @@ const ProductEditPage = {
     async render() {
         const { id } = parseRequestUrl();
         const { data: product } = await ProductApi.get(id);
-        const { data: categories } = await CategoryAPI.getAll();
+        const { data: { categories } } = await CategoryAPI.getAll();
         return /*html*/`
         <h1 style= "text-align: center; color: red;"> Sửa Sản Phẩm </h1>
             <form id="form-update">

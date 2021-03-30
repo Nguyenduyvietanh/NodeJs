@@ -1,54 +1,113 @@
 import Product from "../models/product";
-import formidable from 'formidable';
-import fs from 'fs';
-import _ from 'lodash'
+import formidable from "formidable";
+import fs from "fs";
 
 export const create = (req, res) => {
-    const product = new Product(req.body);
-    product.save((err, data) => {
-        if (err) {
-            res.status(400).json({
-                error: "Add product failed",
-            });
-        }
-        res.json(data);
-    });
-};
-export const read = (req, res) => {
-    return res.json(req.product);
-};
-export const list = (req, res) => {
-    console.log("product list");
-    res.json({
-        message: "Successfully",
-    });
-};
-export const remove = (req, res) => {
-    let product = req.product;
-    product.remove((err, deleteProduct) => {
-        if (err) {
-            return res.status(400).json({
-                error: "không xóa được sản phẩm",
-            });
-        }
-        res.json({
-            product: deleteProduct,
-            message: "Sẩn phẩm xóa thành công",
+  let form = new formidable.IncomingForm();
+  form.keepExtensions = true;
+  form.parse(req, (err, fields, files) => {
+    if (err) {
+      return res.status(400).json({
+        err: "thêm sản phẩm không thành công",
+      });
+    }
+    const { name, description, price } = fields;
+    if (!name || !description || !price) {
+      return res.status(400).json({
+        err: "bạn cần nhập đầy đủ thông tin",
+      });
+    }
+    let product = new Product(fields);
+    //1kb = 1000
+    //1mb = 100000
+    if (files.photo) {
+      if (files.photo.size > 100000) {
+        res.status(400).json({
+          err: "bạn nên upload ảnh dưới 1mb",
         });
+      }
+      product.photo.data = fs.readFileSync(files.photo.path);
+      product.photo.contentType = files.photo.path;
+    }
+    product.save((err, data) => {
+      if (err) {
+        res.status(400).json({
+          error: "không thêm được sản phẩm",
+        });
+      }
+      res.json(data);
     });
-};
-
-export const productById = (res, next, id) => {
-    Product.findById(id).exec((err, product) => {
-        if (err) {
-            res.status(400).json({
-                error: "không tìm thấy sản phẩm",
-            });
-        }
-        res.product = product;
-        next();
-    });
+  });
 };
 export const update = (req, res) => {
-    
-}
+  let form = new formidable.IncomingForm();
+  form.keepExtension = true;
+  form.parse(req, (err, fields, files) => {
+    if (err) {
+      return res.status(400).json({
+        error: "sửa sản phẩm không thành công",
+      });
+    }
+    const { name, description, price } = fields;
+    if (!name || !description || !price) {
+      return res.status(400).json({
+        error: "Bạn cần nhận đủ thông tin",
+      });
+    }
+    let product = res.product;
+    if (files.photo) {
+      if (files.photo.size > 100000) {
+        res.status(400).json({
+          error: "bạn nên upload ảnh dưới 1mb",
+        });
+      }
+      product.photo.data = fs.readFileSync(files.photo.path);
+      product.photo.contentType = files.photo.path;
+    }
+    product.save((err, data) => {
+      if (err) {
+        res.status(400).json({
+          error: "không thêm được sả phẩm",
+        });
+      }
+      res.json(data);
+    });
+  });
+};
+export const read = (req, res) => {
+  return res.json(req.product);
+};
+export const list = (req, res) => {
+  Product.find((err, data) => {
+    if (err) {
+      error: "không tìm thấy sản phẩm";
+    }
+    res.json(data);
+  });
+};
+export const remove = (req, res) => {
+  let product = req.product;
+  product.remove((err, deleteProduct) => {
+    if (err) {
+      return res.status(400).json({
+        error: "không xóa được sản phẩm",
+      });
+    }
+    res.json({
+      deleteProduct,
+      message: "Sẩn phẩm xóa thành công",
+    });
+  });
+};
+
+export const productById = (req, res, next, id) => {
+  Product.findById(id).exec((err, product) => {
+    if (err) {
+      res.status(400).json({
+        error: "không tìm thấy sản phẩm",
+      });
+    }
+    req.product = product;
+    next();
+  });
+};
