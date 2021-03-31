@@ -80,7 +80,7 @@ const ProductAddPage = {
                         const result = await ProductApi.add(product);
                         if (result.status === 200) {
                             alert('Thêm mới danh mục thành công');
-                            window.location.href = '/'
+                            window.location.href = '#/products'
                         }
                         // ProductApi.add(product);
                         // location.href = '#/products'

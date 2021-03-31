@@ -4,7 +4,8 @@ import { parseRequestUrl, $ } from '../utils';
 const CategoryUpdate = {
     async render() {
         const { id } = parseRequestUrl();
-        const { data: category } = await CategoryAPI.get(id);
+        const { data:  categories  } = await CategoryAPI.get(id);
+        // console.log(categories, 'hihi');
         return /*html*/`
         <h1 style= "text-align: center; color: red;"> Sửa Danh Mục </h1>
             <form id="form-update">
@@ -12,7 +13,7 @@ const CategoryUpdate = {
                     <div class="row">
                         <div class="col-12 mb-3">
                             <label for="name">Tên danh mục sản phẩm <b class="text-danger">*</b></label>
-                            <input type="text" placeholder="Nhập danh mục sản phẩm" id="category-name" class="form-control" value="${category.name}" />
+                            <input type="text" placeholder="Nhập danh mục sản phẩm" id="category-name" class="form-control" value="${categories.name}" />
                             <p id="validate-name"></p>
                         </div>
                         <div class="col-12">
@@ -37,14 +38,19 @@ const CategoryUpdate = {
             $('#validate-name').style.color = '';
             $('#category-name').style.borderColor = '';
             const { id } = parseRequestUrl();
-            const { data: category } = await CategoryAPI.get(id);
+            const { data: { categories } } = await CategoryAPI.get(id);
             const newCategory = {
-                ...category,
+                ...categories,
                 name: $('#category-name').value,
             }
-            CategoryAPI.update(id, newCategory);
-            alert('Chỉnh sửa danh mục thành công');
-            location.href = '/'
+            const result = await CategoryAPI.update(id, newCategory);
+                if (result.status === 200) {
+                    alert('Sửa danh mục thành công');
+                    window.location.href = '/'
+                }
+            // CategoryAPI.update(id, newCategory);
+            // alert('Chỉnh sửa danh mục thành công');
+            // location.href = '/'
         })
     }
 }

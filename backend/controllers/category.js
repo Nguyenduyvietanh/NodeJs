@@ -1,5 +1,6 @@
 import Category from "../models/category";
 import formidable from "formidable";
+import _ from "lodash"
 
 export const create = (req, res) => {
 
@@ -57,15 +58,30 @@ export const read = (req, res) => {
 };
 
 export const update = (req, res) => {
-  const category = req.category;
-  category.name = req.body.name;
-  category.save((err, data) => {
-    if (err || !category) {
-      res.status(400).json({
-        error: "Danh mục không tồn tại",
+  let form = new formidable.IncomingForm();
+  form.keepExtensions = true;
+  form.parse(req, (err, fields) => {
+    if (err) {
+      return res.status(400).json({
+        err: "Sửa sản phẩm không thành công",
       });
     }
-    res.json({ data });
+    const { name } = fields;
+    if (!name) {
+      return res.status(400).json({
+        err: "Bạn cần nhập đầy đủ thông tin",
+      })
+    }
+    let category = req.category;
+      category =_.assignIn(category, fields); 
+    category.save((err, data) => {
+      if (err) {
+        return res.status(400).json({
+          error: "Không sửa được danh mục",
+        });
+      }
+      res.json({ data });
+    });
   });
 };
 

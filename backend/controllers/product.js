@@ -1,6 +1,7 @@
 import Product from "../models/product";
 import formidable from "formidable";
 import fs from "fs";
+import _ from "lodash"
 
 export const create = (req, res) => {
   let form = new formidable.IncomingForm();
@@ -56,7 +57,8 @@ export const update = (req, res) => {
         error: "Bạn cần nhận đủ thông tin",
       });
     }
-    let product = res.product;
+    let product = req.product;
+      product =_.assignIn(product, fields); 
     if (files.photo) {
       if (files.photo.size > 100000) {
         res.status(400).json({
@@ -69,7 +71,7 @@ export const update = (req, res) => {
     product.save((err, data) => {
       if (err) {
         res.status(400).json({
-          error: "không thêm được sả phẩm",
+          error: "không sửa được sản phẩm",
         });
       }
       res.json(data);

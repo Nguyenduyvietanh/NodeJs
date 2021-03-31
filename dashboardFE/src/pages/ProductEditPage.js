@@ -9,6 +9,7 @@ const ProductEditPage = {
         const { id } = parseRequestUrl();
         const { data: product } = await ProductApi.get(id);
         const { data: { categories } } = await CategoryAPI.getAll();
+        console.log(categories);
         return /*html*/`
         <h1 style= "text-align: center; color: red;"> Sửa Sản Phẩm </h1>
             <form id="form-update">
@@ -18,6 +19,11 @@ const ProductEditPage = {
                             <label for="name">Tên sản phẩm <b class="text-danger">*</b></label>
                             <input type="text" placeholder="Nhập tên sản phẩm" id="product-name" class="form-control" value="${product.name}" />
                             <span id="validate-name" class="text-error">Tên sản phẩm không được để trống</span>
+                        </div>
+                        <div class="col-12 mb-3">
+                            <label for="description">Mô tả <b class="text-danger">*</b></label>
+                            <input type="text" placeholder="Nhập mô tả sản phẩm" id="product-description" class="form-control" value="${product.description}" />
+                            <span id="validate-description" class="text-error">Tên sản phẩm không được để trống</span>
                         </div>
                         <div class="col-12 mb-3">
                             <label for="price">Ảnh </label>
@@ -32,8 +38,8 @@ const ProductEditPage = {
                             <label for="category">Chọn loại sản phẩm <b class="text-danger">*</b></label>
                             <select class="form-control" id="category">
                             ${categories.map(item => {
-            return `
-                                    <option value="${item.id}" ${product.categoryId == item.id ? "selected" : ''}>${item.name}</option>
+                                return `
+                                    <option value="${item._id}" ${product.category == item._id ? "selected" : ''}>${item.name}</option>
                                 `
         })}
                             </select>
@@ -57,17 +63,23 @@ const ProductEditPage = {
         const { data: product } = await ProductApi.get(id);
         $('#form-update').addEventListener('submit', async e => {
             e.preventDefault();
-            if (this.validateItem('product-name', 'validate-name') && this.validateItem('product-price', 'validate-price') && this.validateItem('product-quantity', 'validate-quantity')) {
+            if (this.validateItem('product-name', 'validate-name') && this.validateItem('product-price', 'validate-price') && this.validateItem('product-quantity', 'validate-quantity') && this.validateItem('product-description', 'validate-description') ) {
                 const newProduct = {
                     ...product,
                     name: $('#product-name').value,
+                    description: $('#product-description').value,
                     price: $('#product-price').value,
-                    categoryId: $('#category').value,
+                    category: $('#category').value,
                     quantity: Number($('#product-quantity').value),
                 }
-                ProductApi.update(id, newProduct);
-                location.href = '#/products'
-                location.reload();
+                const result = await ProductApi.update(id, newProduct);
+                    if (result.status === 200) {
+                        alert('Sửa sản phẩm thành công');
+                        window.location.href = '#/products'
+                    }
+                // ProductApi.update(id, newProduct);
+                // location.href = '#/products'
+                // location.reload();
             }
         })
     },

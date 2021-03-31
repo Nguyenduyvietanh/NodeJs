@@ -7,7 +7,7 @@ const router = express.Router();
 router.post("/category", create);
 
 //list 
-router.get("/categories", list);
+router.get("/category", list);
 
 //update
 router.put("/category/:categoryId", update);

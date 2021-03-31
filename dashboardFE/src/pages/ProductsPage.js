@@ -63,7 +63,7 @@ const ProductsPage = {
             const id = btn.dataset.id;
             btn.addEventListener('click', function () {
                 const question = confirm('Bạn có chắc chắn muốn xóa không?')
-                if (question) {g
+                if (question) {
                     ProductApi.remove(id);
                     location.reload();
                 }
