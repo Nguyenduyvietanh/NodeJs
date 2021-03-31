@@ -27,7 +27,7 @@ const ProductAddPage = {
                             <select class="form-control" id="category">
                                 ${categories.map(item => {
             return `
-                                        <option value="${item.id}">${item.name}</option>
+                                        <option value="${item._id}">${item.name}</option>
                                     `
         })}
                             </select>
@@ -58,18 +58,18 @@ const ProductAddPage = {
                 if (!firebase.apps.length) {
                     firebase.initializeApp(firebaseConfig);
                 }
-                const { data: listProducts } = await ProductApi.getAll();
+                // const { data: listProducts } = await ProductApi.getAll();
                 const productImage = $('#product-image').files[0];
                 let storageRef = firebase.storage().ref(`images/${productImage.name}`);
                 storageRef.put(productImage).then(function () {
                     storageRef.getDownloadURL().then((url) => {
                         const product = {
-                            id: listProducts.length + 1,
+                            // id: listProducts.length + 1,
                             name: $('#product-name').value,
                             price: $('#product-price').value,
-                            categoryId: $('#category').value,
+                            category: $('#category').value,
                             quantity: Number($('#product-quantity').value),
-                            image: url
+                            photo: url
                         }
                         ProductApi.add(product);
                         location.href = '#/products'

@@ -7,6 +7,7 @@ export const create = (req, res) => {
   form.keepExtensions = true;
   form.parse(req, (err, fields, files) => {
     if (err) {
+      console.log('hellos');
       return res.status(400).json({
         err: "thêm sản phẩm không thành công",
       });
@@ -22,7 +23,8 @@ export const create = (req, res) => {
     //1mb = 100000
     if (files.photo) {
       if (files.photo.size > 100000) {
-        res.status(400).json({
+        console.log('hellos');
+        return res.status(400).json({
           err: "bạn nên upload ảnh dưới 1mb",
         });
       }
@@ -31,7 +33,7 @@ export const create = (req, res) => {
     }
     product.save((err, data) => {
       if (err) {
-        res.status(400).json({
+        return res.status(400).json({
           error: "không thêm được sản phẩm",
         });
       }

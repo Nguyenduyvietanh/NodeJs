@@ -37,7 +37,7 @@ const ProductsPage = {
                                 <td>${product.price}</td>
                                 <td><img src="${product.image}" style="width:70px; height: 70px; "  alt=""></td>  
                                 <td>${categories.map(item => {
-                if (item.id == product.categoryId) return item.name;
+                if (item._id == product.category) return item.name;
             }).join(' ')}</td>
                                 <td>${product.quantity}</td>
                                 <td>
