@@ -18,6 +18,11 @@ const ProductAddPage = {
                             <span id="validate-name" class="text-error">Tên sản phẩm không được để trống</span>
                         </div>
                         <div class="col-12 mb-3">
+                            <label for="description">Mô tả sản phẩm <b class="text-danger">*</b></label>
+                            <input type="text" placeholder="Nhập mô tả sản phẩm" id="product-description" class="form-control" />
+                            <span id="validate-description" class="text-error">Mô tả phẩm không được để trống</span>
+                        </div>
+                        <div class="col-12 mb-3">
                             <label for="price">Giá sản phẩm <b class="text-danger">*</b></label>
                             <input type="text" placeholder="Nhập giá sản phẩm" id="product-price" class="form-control" />
                             <span id="validate-price" class="text-error">Giá sản phẩm không được để trống</span>
@@ -54,29 +59,35 @@ const ProductAddPage = {
     async afterRender() {
         $('#form-add').addEventListener('submit', async e => {
             e.preventDefault();
-            if (this.validateItem('product-name', 'validate-name') && this.validateItem('product-price', 'validate-price') && this.validateItem('product-quantity', 'validate-quantity') && this.validateItem('product-image', 'validate-image')) {
-                if (!firebase.apps.length) {
-                    firebase.initializeApp(firebaseConfig);
-                }
+            if (this.validateItem('product-name', 'validate-name') && this.validateItem('product-price', 'validate-price') && this.validateItem('product-quantity', 'validate-quantity') ) {
+                // if (!firebase.apps.length) {
+                //     firebase.initializeApp(firebaseConfig);
+                // }
                 // const { data: listProducts } = await ProductApi.getAll();
-                const productImage = $('#product-image').files[0];
-                let storageRef = firebase.storage().ref(`images/${productImage.name}`);
-                storageRef.put(productImage).then(function () {
-                    storageRef.getDownloadURL().then((url) => {
+                // const productImage = $('#product-image').files[0];
+                // let storageRef = firebase.storage().ref(`images/${productImage.name}`);
+                // storageRef.put(productImage).then(function () {
+                //     storageRef.getDownloadURL().then((url) => {
                         const product = {
                             // id: listProducts.length + 1,
                             name: $('#product-name').value,
-                            price: $('#product-price').value,
+                            description: $('#product-description').value,
+                            price: Number($('#product-price').value),
                             category: $('#category').value,
                             quantity: Number($('#product-quantity').value),
-                            photo: url
+                            // photo: url
                         }
-                        ProductApi.add(product);
-                        location.href = '#/products'
-                        alert('Thêm mới sản phẩm thành công');
-                        location.reload();
-                    })
-                })
+                        const result = await ProductApi.add(product);
+                        if (result.status === 200) {
+                            alert('Thêm mới danh mục thành công');
+                            window.location.href = '/'
+                        }
+                        // ProductApi.add(product);
+                        // location.href = '#/products'
+                        // alert('Thêm mới sản phẩm thành công');
+                        // location.reload();
+                    // })
+                // })
             }
 
         })

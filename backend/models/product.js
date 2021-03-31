@@ -9,9 +9,13 @@ const productSchema = mongoose.Schema(
       maxLength: 32,
       required: true,
     },
+    quantity: {
+      type: Number,
+      required: true,
+    },
     description: {
       type: String,
-      required: true,
+      required: false,
       maxLength: 2000,
     },
     price: {
@@ -25,7 +29,7 @@ const productSchema = mongoose.Schema(
     photo: {
       data: Buffer,
       contentType: String,
-    },
+    },  
     shipping: {
       required: false,
       type: Boolean,

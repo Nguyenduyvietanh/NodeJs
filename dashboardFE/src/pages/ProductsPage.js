@@ -21,6 +21,7 @@ const ProductsPage = {
                     <tr>
                         <th scope="col">STT</th>
                         <th scope="col">Tên sản phẩm</th>
+                        <th scope="col">Mô tả</th>
                         <th scope="col">Giá sản phẩm</th>
                         <th scope="col">Ảnh sản phẩm</th>
                         <th scope="col">Danh mục</th>
@@ -34,11 +35,14 @@ const ProductsPage = {
                             <tr>
                                 <td>${product._id}</td>
                                 <td><p>${product.name}</p></td>
+                                <td><p>${product.description}</p></td>
                                 <td>${product.price}</td>
                                 <td><img src="${product.image}" style="width:70px; height: 70px; "  alt=""></td>  
-                                <td>${categories.map(item => {
-                if (item._id == product.category) return item.name;
-            }).join(' ')}</td>
+                                <td>${categories.map(category => {
+                                    if (category._id == product.category) return category.name;
+                                        }).join(' ')
+                                    }
+                                </td>
                                 <td>${product.quantity}</td>
                                 <td>
                                     <a href="/#/editproduct/${product._id}" class="btn btn-primary">Update</a>
@@ -59,7 +63,7 @@ const ProductsPage = {
             const id = btn.dataset.id;
             btn.addEventListener('click', function () {
                 const question = confirm('Bạn có chắc chắn muốn xóa không?')
-                if (question) {
+                if (question) {g
                     ProductApi.remove(id);
                     location.reload();
                 }
