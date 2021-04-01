@@ -5,7 +5,7 @@ const CategoryPage = {
     async render() {
         const { id } = parseRequestUrl();
         const { data: products } = await ProductApi.getAll();
-        const result = products.filter(product => product.categoryId == id).map(product => {
+        const result = products.filter(product => product.category == id).map(product => {
             return ` 
                  <div class="all-sp">
                     <div class="imgg">
