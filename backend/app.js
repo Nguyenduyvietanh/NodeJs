@@ -6,18 +6,23 @@ import bodyParser from "body-parser";
 import mongoose from "mongoose";
 import categoryRouter from "./routes/category";
 import cors from "cors";
-
+import authRouter from "./routes/auth";
+import expressValidator from "express-validator";
 
 const app = express();
 app.use(cors());
-//Router
-app.use("/api", productRouter);
-app.use("/api", categoryRouter);
-
 //middle
 app.use(bodyParser.json());
 dotenv.config();
 app.use(morgan("dev"));
+app.use(expressValidator());
+
+
+
+//Router
+app.use("/api", productRouter);
+app.use("/api", categoryRouter);
+app.use("/api", authRouter);
 
 //connection
 mongoose
