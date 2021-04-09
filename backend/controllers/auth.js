@@ -1,7 +1,9 @@
-// const expressJwt = require("express-jwt");
+const expressJwt = require("express-jwt");
 // const { errorHandler } = require("");
 import jwt from "jsonwebtoken";
 import User from "../models/user";
+// import dotenv from "dotenv";
+// dotenv.config();
 
 export const signup = (req, res) => {
     console.log("Request body", req.body);
@@ -32,7 +34,7 @@ exports.signin = (req, res) => {
                 error: 'Email and password not match'
             })
         }
-        const token = jwt.sign({ _id: user._id }, process.env.JWT_SECRET);
+        const token = jwt.sign({ _id: user._id }, 'vietanhdeptrai');
         res.cookie('t', token, { expire: new Date() + 9999 });
         const { _id, name, email, role } = user;
         return res.json({
@@ -40,3 +42,33 @@ exports.signin = (req, res) => {
         })
     })
 };
+
+export const signout = (req, res) => {
+    res.clearCookie('t');
+    res.json({
+        message: 'Signout Success'
+    })
+}
+export const requireSignin = expressJwt({
+    secret: 'vietanhdeptrai',
+    algorithms: ["HS256"], // added later
+    userProperty: "auth",
+});
+export const isAuth = (req, res, next) => {
+    let user = req.profile && req.auth && req.profile._id == req.auth._id;
+    if (!user) {
+        return res.status(403).json({
+            error: "Access Denied"
+        })
+    }
+    next();
+}
+
+exports.isAdmin = (req, res, next) => {
+    if (req.profile.role == 0) {
+        return res.status(403).json({
+            error: "Bạn không phải Admin !"
+        })
+    }
+    next();
+}

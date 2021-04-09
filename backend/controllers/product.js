@@ -8,7 +8,7 @@ export const create = (req, res) => {
   form.keepExtensions = true;
   form.parse(req, (err, fields, files) => {
     if (err) {
-      console.log('hellos');
+      // console.log('hellos');
       return res.status(400).json({
         err: "thêm sản phẩm không thành công",
       });
@@ -33,7 +33,9 @@ export const create = (req, res) => {
       product.photo.contentType = files.photo.path;
     }
     product.save((err, data) => {
+      // console.log('hehheh');
       if (err) {
+        console.log(err);
         return res.status(400).json({
           error: "không thêm được sản phẩm",
         });
@@ -58,7 +60,7 @@ export const update = (req, res) => {
       });
     }
     let product = req.product;
-      product =_.assignIn(product, fields); 
+    product = _.assignIn(product, fields);
     if (files.photo) {
       if (files.photo.size > 100000) {
         res.status(400).json({

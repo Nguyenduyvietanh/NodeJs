@@ -18,4 +18,4 @@ router.delete("/products/:productId", remove);
 //detail product
 router.param("productId", productById);
 router.get("/products/:productId", read);
-module.exports = router;
+module.exports = router;    

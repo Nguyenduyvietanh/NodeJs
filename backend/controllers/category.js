@@ -19,6 +19,7 @@ export const create = (req, res) => {
       })
     }
     const category = new Category(fields);
+    console.log(category);
     category.save((err, data) => {
       if (err) {
         return res.status(400).json({
@@ -73,7 +74,7 @@ export const update = (req, res) => {
       })
     }
     let category = req.category;
-      category =_.assignIn(category, fields); 
+    category = _.assignIn(category, fields);
     category.save((err, data) => {
       if (err) {
         return res.status(400).json({
