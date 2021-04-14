@@ -4,10 +4,11 @@ class Home {
     static async render() {
         const { data: products } = await ProductAPI.getAll();
         const { data: { categories } } = await CategoryAPI.getAll();
-        console.log(products, 'product');
-        console.log(categories, 'categories');
+        // console.log(products, 'product');
+        // console.log(categories, 'categories');
 
         return categories.map(category => {
+            console.log(category, 'hihi');
             return `
                 <div class="mb-3">
                     <div class="sanpham">
@@ -16,7 +17,7 @@ class Home {
                                 <h3 class="mt-4">${category.name}</h3>
                             </div>
                             <div class="danhmuc">
-                                <a href="/#/category/${category.id}">Tất Cả <i class="fa fa-angle-double-right" aria-hidden="true"></i> <i class="fa fa-angle-double-right" aria-hidden="true"></i> </a>
+                                <a href="/#/category/${category._id}">Tất Cả <i class="fa fa-angle-double-right" aria-hidden="true"></i> <i class="fa fa-angle-double-right" aria-hidden="true"></i> </a>
                             </div>
                             <div class="icon">
                                 <a href=""><img src="https://i.ibb.co/KmJkpP1/Untitled-1.png" alt=""></a>
@@ -24,11 +25,11 @@ class Home {
                         </div>
                         <hr size="2px" color="#eaeaea" width="780px" align="left">
                         <div class="loaisp">
-                            ${products.filter(product => product.categoryId == category.id).slice(0, 4).map(product => {
+                            ${products.filter(product => product.category == category._id).slice(0, 4).map(product => {
                 return ` 
                                     <div class="sp">
                                         <a href="#/products/${product._id}" id="tt">
-                                            <img src="${product.image}" class="img-fluid" width="176px" height="203px" alt="">
+                                            <img src="http://localhost:4000/api/products/photo/${product._id}" class="img-fluid" width="176px" height="203px" alt="">
                                         </a>
                                         <div class="gia">
                                             <a href="#/products/${product._id}" id="tt">${product.name}</a>

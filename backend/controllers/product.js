@@ -30,7 +30,7 @@ export const create = (req, res) => {
         });
       }
       product.photo.data = fs.readFileSync(files.photo.path);
-      product.photo.contentType = files.photo.path;
+      product.photo.contentType = files.photo.type;
     }
     product.save((err, data) => {
       // console.log('hehheh');
@@ -68,7 +68,7 @@ export const update = (req, res) => {
         });
       }
       product.photo.data = fs.readFileSync(files.photo.path);
-      product.photo.contentType = files.photo.path;
+      product.photo.contentType = files.photo.type;
     }
     product.save((err, data) => {
       if (err) {
@@ -117,3 +117,10 @@ export const productById = (req, res, next, id) => {
     next();
   });
 };
+export const photo = (req, res, next) => {
+  if (req.product.photo.data) {
+    res.set("Content-Type", req.product.photo.contentType);
+    return res.send(req.product.photo.data);
+  }
+  next();
+}
