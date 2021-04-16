@@ -30,7 +30,7 @@ const router = async () => {
     const request = parseRequestUrl();
     const token = localStorage.getItem('token');
     
-    console.log(token);
+    // console.log(token);
     if (token) {
         const parseUrl = (request.resource ? `/${request.resource}` : '/') +
             (request.id ? '/:id' : '');
