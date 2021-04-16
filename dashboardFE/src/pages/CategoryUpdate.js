@@ -4,7 +4,7 @@ import { parseRequestUrl, $ } from '../utils';
 const CategoryUpdate = {
     async render() {
         const { id } = parseRequestUrl();
-        const { data:  categories  } = await CategoryAPI.get(id);
+        const { data: categories } = await CategoryAPI.get(id);
         // console.log(categories, 'hihi');
         return /*html*/`
         <h1 style= "text-align: center; color: red;"> Sửa Danh Mục </h1>
@@ -39,15 +39,17 @@ const CategoryUpdate = {
             $('#category-name').style.borderColor = '';
             const { id } = parseRequestUrl();
             const { data: { categories } } = await CategoryAPI.get(id);
-            const newCategory = {
-                ...categories,
-                name: $('#category-name').value,
+            // const newCategory = {
+            //     ...categories,
+            //     name: $('#category-name').value,
+            // }
+            let formData = new FormData()
+            formData.append('name', $('#category-name').value)
+            const result = await CategoryAPI.update(id, formData);
+            if (result.status === 200) {
+                alert('Sửa danh mục thành công');
+                window.location.href = '/'
             }
-            const result = await CategoryAPI.update(id, newCategory);
-                if (result.status === 200) {
-                    alert('Sửa danh mục thành công');
-                    window.location.href = '/'
-                }
             // CategoryAPI.update(id, newCategory);
             // alert('Chỉnh sửa danh mục thành công');
             // location.href = '/'

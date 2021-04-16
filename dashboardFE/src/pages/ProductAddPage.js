@@ -59,35 +59,41 @@ const ProductAddPage = {
     async afterRender() {
         $('#form-add').addEventListener('submit', async e => {
             e.preventDefault();
-            if (this.validateItem('product-name', 'validate-name') && this.validateItem('product-price', 'validate-price') && this.validateItem('product-quantity', 'validate-quantity') ) {
-                // if (!firebase.apps.length) {
-                //     firebase.initializeApp(firebaseConfig);
-                // }
-                // const { data: listProducts } = await ProductApi.getAll();
-                // const productImage = $('#product-image').files[0];
-                // let storageRef = firebase.storage().ref(`images/${productImage.name}`);
-                // storageRef.put(productImage).then(function () {
-                //     storageRef.getDownloadURL().then((url) => {
-                        const product = {
-                            // id: listProducts.length + 1,
-                            name: $('#product-name').value,
-                            description: $('#product-description').value,
-                            price: Number($('#product-price').value),
-                            category: $('#category').value,
-                            quantity: Number($('#product-quantity').value),
-                            // photo: url
-                        }
-                        const result = await ProductApi.add(product);
-                        if (result.status === 200) {
+            if (this.validateItem('product-name', 'validate-name') && this.validateItem('product-price', 'validate-price') && this.validateItem('product-quantity', 'validate-quantity')) {
+                if (!firebase.apps.length) {
+                    firebase.initializeApp(firebaseConfig);
+                }
+                const { data: listProducts } = await ProductApi.getAll();
+                const productImage = $('#product-image').files[0];
+                let storageRef = firebase.storage().ref(`images/${productImage.name}`);
+                storageRef.put(productImage).then(function () {
+                    storageRef.getDownloadURL().then(async (url) => {
+                        // const product = {
+                        //     // id: listProducts.length + 1,
+                        //     name: $('#product-name').value,
+                        //     description: $('#product-description').value,
+                        //     price: Number($('#product-price').value),
+                        //     category: $('#category').value,
+                        //     quantity: Number($('#product-quantity').value),
+                        //     // photo: url
+                        // }
+                        let formData = new FormData()
+                        formData.append('name', $('#product-name').value),
+                            formData.append('description', $('#product-description').value),
+                            formData.append('price', $('#product-price').value),
+                            formData.append('category', $('#category').value),
+                            formData.append('quantity', $('#product-quantity').value)
+                        formData.append('photo', url)
+                        const { status } = await ProductApi.add(formData);
+                        if (status === 200) {
                             alert('Thêm mới danh mục thành công');
                             window.location.href = '#/products'
                         }
-                        // ProductApi.add(product);
                         // location.href = '#/products'
                         // alert('Thêm mới sản phẩm thành công');
                         // location.reload();
-                    // })
-                // })
+                    })
+                })
             }
 
         })

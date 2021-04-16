@@ -22,16 +22,16 @@ export const create = (req, res) => {
     let product = new Product(fields);
     //1kb = 1000
     //1mb = 100000
-    if (files.photo) {
-      if (files.photo.size > 100000) {
-        console.log('hellos');
-        return res.status(400).json({
-          err: "bạn nên upload ảnh dưới 1mb",
-        });
-      }
-      product.photo.data = fs.readFileSync(files.photo.path);
-      product.photo.contentType = files.photo.type;
-    }
+    // if (files.photo) {
+    //   if (files.photo.size > 100000) {
+    //     console.log('hellos');
+    //     return res.status(400).json({
+    //       err: "bạn nên upload ảnh dưới 1mb",
+    //     });
+    //   }
+    //   product.photo.data = fs.readFileSync(files.photo.path);
+    //   product.photo.contentType = files.photo.type;
+    // }
     product.save((err, data) => {
       // console.log('hehheh');
       if (err) {

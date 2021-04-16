@@ -37,7 +37,7 @@ const ProductsPage = {
                                 <td><p>${product.name}</p></td>
                                 <td><p>${product.description}</p></td>
                                 <td>${product.price}</td>
-                                <td><img src="http://localhost:4000/api/products/photo/${product._id}" style="width:70px; height: 70px; "  alt=""></td>  
+                                <td><img src="${product.photo}" style="width:70px; height: 70px; "  alt=""></td>  
                                 <td>${categories.map(category => {
                 if (category._id == product.category) return category.name;
             }).join(' ')

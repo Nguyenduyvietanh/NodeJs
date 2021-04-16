@@ -38,7 +38,7 @@ const ProductEditPage = {
                             <label for="category">Chọn loại sản phẩm <b class="text-danger">*</b></label>
                             <select class="form-control" id="category">
                             ${categories.map(item => {
-                                return `
+            return `
                                     <option value="${item._id}" ${product.category == item._id ? "selected" : ''}>${item.name}</option>
                                 `
         })}
@@ -61,22 +61,29 @@ const ProductEditPage = {
     async afterRender() {
         const { id } = parseRequestUrl();
         const { data: product } = await ProductApi.get(id);
+        console.log(product, 'hihi');
         $('#form-update').addEventListener('submit', async e => {
             e.preventDefault();
-            if (this.validateItem('product-name', 'validate-name') && this.validateItem('product-price', 'validate-price') && this.validateItem('product-quantity', 'validate-quantity') && this.validateItem('product-description', 'validate-description') ) {
-                const newProduct = {
-                    ...product,
-                    name: $('#product-name').value,
-                    description: $('#product-description').value,
-                    price: $('#product-price').value,
-                    category: $('#category').value,
-                    quantity: Number($('#product-quantity').value),
+            if (this.validateItem('product-name', 'validate-name') && this.validateItem('product-price', 'validate-price') && this.validateItem('product-quantity', 'validate-quantity') && this.validateItem('product-description', 'validate-description')) {
+                // const newProduct = {
+                //     ...product,
+                //     name: $('#product-name').value,
+                //     description: $('#product-description').value,
+                //     price: $('#product-price').value,
+                //     category: $('#category').value,
+                //     quantity: Number($('#product-quantity').value),
+                // }
+                let formData = new FormData()
+                formData.append('name', $('#product-name').value),
+                    formData.append('description', $('#product-description').value),
+                    formData.append('price', $('#product-price').value),
+                    formData.append('category', $('#category').value),
+                    formData.append('quantity', $('#product-quantity').value)
+                const result = await ProductApi.update(id, formData);
+                if (result.status === 200) {
+                    alert('Sửa sản phẩm thành công');
+                    window.location.href = '#/products'
                 }
-                const result = await ProductApi.update(id, newProduct);
-                    if (result.status === 200) {
-                        alert('Sửa sản phẩm thành công');
-                        window.location.href = '#/products'
-                    }
                 // ProductApi.update(id, newProduct);
                 // location.href = '#/products'
                 // location.reload();
