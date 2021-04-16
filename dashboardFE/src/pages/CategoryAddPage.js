@@ -41,7 +41,13 @@ const CategoryAddPage = {
                 formData.append('name', $('#category-name').value)
             const result = await CategoryAPI.add(formData);
             if (result.status === 200) {
-                alert('Thêm mới danh mục thành công');
+                Swal.fire({
+                    position: 'center-center',
+                    icon: 'success',
+                    title: 'Thêm danh mục thành công',
+                    showConfirmButton: false,
+                    timer: 2000
+                  })
                 window.location.href = '/'
             }
         })

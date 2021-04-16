@@ -29,7 +29,7 @@ class Home {
                 return ` 
                                     <div class="sp">
                                         <a href="#/products/${product._id}" id="tt">
-                                            <img src="http://localhost:4000/api/products/photo/${product._id}" class="img-fluid" width="176px" height="203px" alt="">
+                                            <img src="${product.photo}" class="img-fluid"  alt="">
                                         </a>
                                         <div class="gia">
                                             <a href="#/products/${product._id}" id="tt">${product.name}</a>

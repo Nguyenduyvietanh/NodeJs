@@ -27,7 +27,7 @@ const ProductEditPage = {
                         </div>
                         <div class="col-12 mb-3">
                             <label for="price">Ảnh </label>
-                            <div class="col-4"> <img src="${product.image}" style="width:300px; height: 420px;"  alt=""> </div>
+                            <div class="col-4"> <img src="${product.photo}" style="width:300px; height: 420px;"  alt=""> </div>
                         </div>
                         <div class="col-12 mb-3">
                             <label for="price">Giá sản phẩm <b class="text-danger">*</b></label>
@@ -81,12 +81,15 @@ const ProductEditPage = {
                     formData.append('quantity', $('#product-quantity').value)
                 const result = await ProductApi.update(id, formData);
                 if (result.status === 200) {
-                    alert('Sửa sản phẩm thành công');
+                    Swal.fire({
+                        position: 'center-center',
+                        icon: 'success',
+                        title: 'Sửa sản phẩm thành công',
+                        showConfirmButton: false,
+                        timer: 2000
+                      })
                     window.location.href = '#/products'
                 }
-                // ProductApi.update(id, newProduct);
-                // location.href = '#/products'
-                // location.reload();
             }
         })
     },

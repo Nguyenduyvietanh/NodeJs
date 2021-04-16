@@ -6,7 +6,6 @@ import ProductEditPage from './pages/ProductEditPage.js';
 import ListCategory from './pages/ListCategory.js';
 import CategoryAddPage from './pages/CategoryAddPage.js';
 import CategoryUpdate from './pages/CategoryUpdate.js';
-import Login from './pages/Login.js';
 import ListContact from './pages/listContact.js';
 import ListNewPage from './pages/NewListPage.js';
 import NewAddPage from './pages/NewAddPage.js';
@@ -19,7 +18,6 @@ const routes = {
     '/editproduct/:id': ProductEditPage,
     '/addcategory': CategoryAddPage,
     '/updatecategory/:id': CategoryUpdate,
-    '/login': Login,
     '/contacts': ListContact,
     '/news': ListNewPage,
     '/addnews': NewAddPage,
@@ -27,11 +25,7 @@ const routes = {
 }
 
 const router = async () => {
-    const request = parseRequestUrl();
-    const token = localStorage.getItem('token');
-    
-    // console.log(token);
-    if (token) {
+    const request = parseRequestUrl();   
         const parseUrl = (request.resource ? `/${request.resource}` : '/') +
             (request.id ? '/:id' : '');
         const screen = routes[parseUrl] ? routes[parseUrl] : Error404Page;
@@ -43,26 +37,9 @@ const router = async () => {
             document.getElementById("title").innerHTML = 'Quản lý liên hệ';
         } else if (parseUrl == '/news') {
             document.getElementById("title").innerHTML = 'Quản lý tin tức';
-        }
-    
-        if (parseUrl == '/login') {
-            document.getElementById('body-content').style.display = 'none';
-            $('#login').innerHTML = await screen.render();
-            await screen.afterRender();
-        } else {
-            $('#main-content').innerHTML = await screen.render();
-            await screen.afterRender();
-        }
-    } else {
-        const parseUrl = '/login';
-        const screen = routes[parseUrl] ? routes[parseUrl] : Error404Page;
-    
-        if (parseUrl == '/login') {
-            document.getElementById('body-content').style.display = 'none';
-            $('#login').innerHTML = await screen.render();
-            await screen.afterRender();
-        } 
-    }
+        }    
+        $('#main-content').innerHTML = await screen.render();
+        await screen.afterRender();
 }
 window.addEventListener('DOMContentLoaded', router);
 window.addEventListener('hashchange', router)

@@ -47,12 +47,15 @@ const CategoryUpdate = {
             formData.append('name', $('#category-name').value)
             const result = await CategoryAPI.update(id, formData);
             if (result.status === 200) {
-                alert('Sửa danh mục thành công');
+                Swal.fire({
+                    position: 'center-center',
+                    icon: 'success',
+                    title: 'Sửa danh mục thành công',
+                    showConfirmButton: false,
+                    timer: 2000
+                  })
                 window.location.href = '/'
             }
-            // CategoryAPI.update(id, newCategory);
-            // alert('Chỉnh sửa danh mục thành công');
-            // location.href = '/'
         })
     }
 }

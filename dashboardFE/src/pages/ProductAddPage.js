@@ -86,12 +86,15 @@ const ProductAddPage = {
                         formData.append('photo', url)
                         const { status } = await ProductApi.add(formData);
                         if (status === 200) {
-                            alert('Thêm mới danh mục thành công');
+                            Swal.fire({
+                                position: 'center-center',
+                                icon: 'success',
+                                title: 'Thêm sản phẩm thành công',
+                                showConfirmButton: false,
+                                timer: 2000
+                              })
                             window.location.href = '#/products'
                         }
-                        // location.href = '#/products'
-                        // alert('Thêm mới sản phẩm thành công');
-                        // location.reload();
                     })
                 })
             }

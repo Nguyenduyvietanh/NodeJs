@@ -26,12 +26,12 @@ exports.signin = (req, res) => {
     User.findOne({ email }, (error, user) => {
         if (error || !user) {
             return res.status(400).json({
-                error: 'Use with that email does not exist. Plesase signup'
+                error: 'Tài khoản không tồn tại !!!'
             })
         }
         if (!user.authenticate(password)) {
             return res.status(401).json({
-                error: 'Email and password not match'
+                error: 'Sai mật khẩu !'
             })
         }
         const token = jwt.sign({ _id: user._id }, 'vietanhdeptrai');
@@ -56,6 +56,7 @@ export const requireSignin = expressJwt({
 });
 export const isAuth = (req, res, next) => {
     let user = req.profile && req.auth && req.profile._id == req.auth._id;
+    console.log(user)
     if (!user) {
         return res.status(403).json({
             error: "Access Denied"

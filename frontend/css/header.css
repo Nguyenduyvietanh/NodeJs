@@ -11,7 +11,7 @@ body{
     margin: 0px auto;  
 }
 .header{
-    height: 166px;
+    height: 163px;
     background-color: #222222;   
     position: relative;
 }
@@ -222,7 +222,7 @@ ul li a:hover{
 /************end banner***********/
 .sanpham{
     width: 834px;
-    height: 454px;
+    height: auto;
     background-color: #ffff;
     padding-left: 25px;
 }
@@ -252,6 +252,10 @@ ul li a:hover{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     padding-top: 20px;
+}
+.sp a img{
+    width: 172px; 
+    height: 266px;
 }
 .gia a{
     text-decoration: none; 
@@ -356,7 +360,7 @@ ul li a:hover{
     grid-template-columns: 24px 1fr;   
 }
 .img-diachi{
-    padding-top: 19px;
+    padding-top: 6px;
 }
 .text-diachi p{
     color: #ffff;
@@ -388,24 +392,24 @@ ul li a:hover{
     grid-template-columns: 24px 1fr;
 }
 .img-mxh{
-    padding-top: 15px;
+    padding-top: 6px;
 }
 .text-mxh{
     color: #ffff;
     font-size: 15px;
-    line-height: 15px
+    
 }
 .mxh2{
     display: grid;
     grid-template-columns: 24px 1fr;
 }
 .img-mxh2{
-    padding-top: 15px;
+    padding-top: 6px;
 }
 .text-mxh2{
     color: #ffff;
     font-size: 15px;
-    line-height: 15px
+    
 }
 .chiamxh{
     display: grid;

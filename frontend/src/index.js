@@ -7,6 +7,7 @@ import CategoryPage from './pages/CategoryPage.js';
 import Contact from './pages/Contact.js';
 import News from './pages/news.js';
 import NewDetail from './pages/NewDetail.js';
+import Login from './pages/Login.js';
 
 const routes = {
     '/': home,
@@ -14,7 +15,8 @@ const routes = {
     '/category/:id': CategoryPage,
     '/contact': Contact,
     '/news': News,
-    '/newdetail/:id': NewDetail
+    '/newdetail/:id': NewDetail,
+    '/login': Login
 }
 
 const router = async () => {
@@ -23,6 +25,12 @@ const router = async () => {
     const parseUrl = (request.resource ? `/${request.resource}` : '/') +
         (request.id ? '/:id' : '');
     const screen = routes[parseUrl] ? routes[parseUrl] : Error404Page;
+    if (parseUrl == '/login'){
+       
+        $('#body-content').innerHTML = "";
+        $('#login').innerHTML = await screen.render();
+        await screen.afterRender();
+    }
     $('#header').innerHTML = await Header.render();
     $('#main-content').innerHTML = await screen.render();
     await screen.afterRender();
