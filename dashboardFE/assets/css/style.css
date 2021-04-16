@@ -9,3 +9,15 @@
     color: red;
     padding: 5px 10px;
 }
+
+.login-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#form-login{  
+    display: flex;
+    flex-direction: column;
+}

@@ -28,26 +28,40 @@ const routes = {
 
 const router = async () => {
     const request = parseRequestUrl();
-
-    const parseUrl = (request.resource ? `/${request.resource}` : '/') +
-        (request.id ? '/:id' : '');
-    const screen = routes[parseUrl] ? routes[parseUrl] : Error404Page;
-    if (parseUrl == '/' || parseUrl == '/updatecategory') {
-        document.getElementById("title").innerHTML = 'Quản lý danh mục';
-    } else if (parseUrl == '/products') {
-        document.getElementById("title").innerHTML = 'Quản lý sản phẩm';
-    } else if (parseUrl == '/contacts') {
-        document.getElementById("title").innerHTML = 'Quản lý liên hệ';
-    } else if (parseUrl == '/news') {
-        document.getElementById("title").innerHTML = 'Quản lý tin tức';
-    }
-
-    if (parseUrl == '/login') {
-        $('#body-content').innerHTML = await screen.render();
-        await screen.afterRender();
+    const token = localStorage.getItem('token');
+    
+    // console.log(token);
+    if (token) {
+        const parseUrl = (request.resource ? `/${request.resource}` : '/') +
+            (request.id ? '/:id' : '');
+        const screen = routes[parseUrl] ? routes[parseUrl] : Error404Page;
+        if (parseUrl == '/' || parseUrl == '/updatecategory') {
+            document.getElementById("title").innerHTML = 'Quản lý danh mục';
+        } else if (parseUrl == '/products') {
+            document.getElementById("title").innerHTML = 'Quản lý sản phẩm';
+        } else if (parseUrl == '/contacts') {
+            document.getElementById("title").innerHTML = 'Quản lý liên hệ';
+        } else if (parseUrl == '/news') {
+            document.getElementById("title").innerHTML = 'Quản lý tin tức';
+        }
+    
+        if (parseUrl == '/login') {
+            document.getElementById('body-content').style.display = 'none';
+            $('#login').innerHTML = await screen.render();
+            await screen.afterRender();
+        } else {
+            $('#main-content').innerHTML = await screen.render();
+            await screen.afterRender();
+        }
     } else {
-        $('#main-content').innerHTML = await screen.render();
-        await screen.afterRender();
+        const parseUrl = '/login';
+        const screen = routes[parseUrl] ? routes[parseUrl] : Error404Page;
+    
+        if (parseUrl == '/login') {
+            document.getElementById('body-content').style.display = 'none';
+            $('#login').innerHTML = await screen.render();
+            await screen.afterRender();
+        } 
     }
 }
 window.addEventListener('DOMContentLoaded', router);
