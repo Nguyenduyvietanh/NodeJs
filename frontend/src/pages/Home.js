@@ -4,11 +4,9 @@ class Home {
     static async render() {
         const { data: products } = await ProductAPI.getAll();
         const { data: { categories } } = await CategoryAPI.getAll();
-        // console.log(products, 'product');
-        // console.log(categories, 'categories');
+
 
         return categories.map(category => {
-            console.log(category, 'hihi');
             return `
                 <div class="mb-3">
                     <div class="sanpham">

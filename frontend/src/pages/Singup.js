@@ -1,15 +1,17 @@
-import LoginAPI from "../api/LoginAPI";
-import { $ } from "../utils";
 
-
-const Login = {
+import LoginAPI from '../api/LoginAPI';
+import { $ } from '../utils'
+const Singup = {
     async render() {
         return `
             <div class="loginbox" style="background: url(../../image/pic1.jpg);" >
             <img src="../../image/avatar.png" class="avatar">
-                <h1>Đăng Nhập</h1>
-                <form id="form-login">
-                    <p>Username</p>
+                <h1>Đăng kí </h1>
+                <form id="form-singup">
+                    <p>Name</p>
+                    <input type="text" id="input-name" placeholder="Enter name">
+                    <span id="validate-name" class="text-error">Email không được để trống</span>
+                    <p>Email</p>
                     <input type="email" id="input-email" placeholder="Enter email">
                     <span id="validate-email" class="text-error">Email không được để trống</span>
                     <p>Password</p>
@@ -22,26 +24,23 @@ const Login = {
             </div>
         `
     },
-
     async afterRender() {
-        $('#form-login').addEventListener('submit', async e => {
+        $('#form-singup').addEventListener('submit', async e => {
             e.preventDefault();
-            if(this.validateItem('input-email', 'validate-email') && this.validateItem('input-password', 'validate-password')) {
-                console.log('oke hihi');
+            if(this.validateItem('input-email', 'validate-email') && this.validateItem('input-password', 'validate-password') && this.validateItem('input-name', 'validate-name') ) {
                 const account = {
+                    name: $('#input-name').value,
                     email: $('#input-email').value,
                     password:  $('#input-password').value,
                 }
-                const result = await LoginAPI.login(account);
-                if (result.status === 200) {               
-                    console.log('Login thành công');
-                    localStorage.setItem('token', result.data.token);
+                const result = await LoginAPI.signup(account);
+                if (result.status === 200) {
+                    alert('Đăng kí tài khoản thành công !!!')                                 
                     window.location.href = '/'
                 }
             }
         })
     },
-
     validateItem(id, idText) {
         if(!document.getElementById(id).value) {
             document.getElementById(idText).style.display = 'block';
@@ -54,4 +53,4 @@ const Login = {
     }
 }
 
-export default Login;
+export default Singup;

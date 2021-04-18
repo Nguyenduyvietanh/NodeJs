@@ -3,7 +3,6 @@ import CategoryAPI from "../api/categoryAPI.js"
 const Header = {
     async render() {
         const { data: { categories } } = await CategoryAPI.getAll();
-        console.log(categories, 123);
         return `
             ${categories.map(category => {
             return `
@@ -13,6 +12,10 @@ const Header = {
         }).join(" ")
             }       
         `
+    },
+
+    async afterRender() {
+        
     }
 }
 export default Header;

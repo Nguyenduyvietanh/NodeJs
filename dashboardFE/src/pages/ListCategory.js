@@ -4,7 +4,7 @@ import { $ } from '../utils';
 const ListCategory = {
     async render() {
         const { data: { categories } } = await CategoryAPI.getAll();
-
+        let index = 0;
         return  /*html*/`
         <h1 style= "text-align: center; color: red;"> Danh Sách Danh Mục </h1>
             <div id="categories">
@@ -15,7 +15,7 @@ const ListCategory = {
                         <a href="#/addcategory" class="btn btn-primary">Thêm mới danh mục</a>
                     </div>
                 </div>
-                <table class="table table-striped table-hover">
+                <table class="table  table-striped  table-hover">
                     <thead>
                         <tr>
                             <th scope="col">STT</th>
@@ -25,9 +25,10 @@ const ListCategory = {
                     </thead>
                     <tbody>
                         ${categories.map(category => {
+                            index +=1;
             return `
                                 <tr>
-                                    <td>${category._id}</td>
+                                    <td>${index}</td>
                                     <td><p>${category.name}</p></td>
                                     <td>
                                         <a href="/#/updatecategory/${category._id}" class="btn btn-primary">Update</a>

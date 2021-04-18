@@ -51,6 +51,7 @@ const Contact = {
             }
 
         });
+
     },
     validateItem(id, idText) {
         if (!document.getElementById(id).value) {

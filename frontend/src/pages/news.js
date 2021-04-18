@@ -3,7 +3,6 @@ import NewAPI from "../api/newAPI";
 const News = {
     async render() {
         const { data: news } = await NewAPI.getAll();
-        console.log(news, 'hihi');
         return /*html*/`
             <h1 style="color: #2F4F4F; text-align: center; font-weight: bold;"> Tin Tức </h1>
             <div class="content-news">

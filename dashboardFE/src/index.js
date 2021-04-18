@@ -10,6 +10,9 @@ import ListContact from './pages/listContact.js';
 import ListNewPage from './pages/NewListPage.js';
 import NewAddPage from './pages/NewAddPage.js';
 import NewUpdatePage from './pages/NewUpdatePage.js';
+import LoginAPI from './api/LoginAPI';
+import Login from './pages/Login';
+import Header from './components/Header';
 
 const routes = {
     '/': ListCategory,
@@ -22,24 +25,33 @@ const routes = {
     '/news': ListNewPage,
     '/addnews': NewAddPage,
     '/updatenews/:id': NewUpdatePage,
+    '/login': Login
 }
 
 const router = async () => {
-    const request = parseRequestUrl();   
-        const parseUrl = (request.resource ? `/${request.resource}` : '/') +
-            (request.id ? '/:id' : '');
-        const screen = routes[parseUrl] ? routes[parseUrl] : Error404Page;
-        if (parseUrl == '/' || parseUrl == '/updatecategory') {
-            document.getElementById("title").innerHTML = 'Quản lý danh mục';
-        } else if (parseUrl == '/products') {
-            document.getElementById("title").innerHTML = 'Quản lý sản phẩm';
-        } else if (parseUrl == '/contacts') {
-            document.getElementById("title").innerHTML = 'Quản lý liên hệ';
-        } else if (parseUrl == '/news') {
-            document.getElementById("title").innerHTML = 'Quản lý tin tức';
-        }    
-        $('#main-content').innerHTML = await screen.render();
-        await screen.afterRender();
+    const token = localStorage.getItem('token');
+
+    const { data: check } = await LoginAPI.check(token);
+
+    const request = parseRequestUrl();
+    const parseUrl = check !== 403 && check.role === 1 ? (request.resource ? `/${request.resource}` : '/') + (request.id ? '/:id' : '') : '/login';
+        
+    if (check === 403 || check.role !== 1) {
+        alert('Vui lòng đăng nhập để truy cập vào trang quản lý !!!')
+    }
+    const screen = routes[parseUrl] ? routes[parseUrl] : Error404Page;
+    if (parseUrl == '/' || parseUrl == '/updatecategory') {
+        document.getElementById("title").innerHTML = 'Quản lý danh mục';
+    } else if (parseUrl == '/products') {
+        document.getElementById("title").innerHTML = 'Quản lý sản phẩm';
+    } else if (parseUrl == '/contacts') {
+        document.getElementById("title").innerHTML = 'Quản lý liên hệ';
+    } else if (parseUrl == '/news') {
+        document.getElementById("title").innerHTML = 'Quản lý tin tức';
+    }
+    $('#main-content').innerHTML = await screen.render();
+    $('#header').innerHTML = await Header.render();
+    await screen.afterRender();
 }
 window.addEventListener('DOMContentLoaded', router);
 window.addEventListener('hashchange', router)

@@ -19,6 +19,7 @@ export const signup = (req, res) => {
         user.hashed_password = undefined;
         res.json({ user });
     });
+
 };
 
 exports.signin = (req, res) => {
@@ -43,6 +44,39 @@ exports.signin = (req, res) => {
     })
 };
 
+exports.checkLogin = (req, res) => {
+    try {
+        const { token } = req.body;
+        const ketqua = jwt.verify(token, 'vietanhdeptrai');
+        if (ketqua) {
+            User.findById(ketqua._id).exec((error, user) => {
+                if (error || !user) {
+                    return res.status(400).json({
+                        error: 'User not found'
+                    })
+                }
+                console.log(user);
+                if (user.role === 1) {
+                    return res.json({
+                        userId: ketqua._id,
+                        role: 1
+                    })
+                }
+                if (user.role === 0) {
+                    return res.json({
+                        userId: ketqua._id,
+                        role: 0
+                    })
+                } else {
+                    return res.json(403)
+                }
+            })
+        }
+    } catch (error) {
+        return res.json(403)
+    }
+
+};
 export const signout = (req, res) => {
     res.clearCookie('t');
     res.json({

@@ -9,7 +9,7 @@ const CategoryPage = {
             return ` 
                  <div class="all-sp">
                     <div class="imgg">
-                        <a href="/#/products/${product._id}"><img src="${product.image}" class="img-fluid" width="100%" height="350px" alt=""></a>
+                        <a href="/#/products/${product._id}"><img src="${product.photo}" class="img-fluid" width="100%" height="350px" alt=""></a>
                     </div>
                     <div class="ten">
                         <a href="">${product.name}</a>

@@ -9,9 +9,6 @@ const LoginAPI = {
         const url = `/signin`;
         return axiosClient.post(url, account);
     },
-    signup(account) {
-        const url = `/signup`;
-        return axiosClient.post(url, account);
-    },
 }
+
 export default LoginAPI;

@@ -6,6 +6,7 @@ const ProductsPage = {
     async render() {
         const { data: products } = await ProductApi.getAll();
         const { data: { categories } } = await CategoryAPI.getAll();
+        let index = 0 ; 
         return /*html*/`
         <h1 style= "text-align: center; color: red;"> Danh Sách Sản Phẩm </h1>
         <div id="list-products">
@@ -30,10 +31,12 @@ const ProductsPage = {
                     </tr>
                 </thead>
                 <tbody>
+             
                     ${products.map(product => {
+                        index += 1 ; 
             return `
                             <tr>
-                                <td>${product._id}</td>
+                                <td>${index}</td>
                                 <td><p>${product.name}</p></td>
                                 <td><p>${product.description}</p></td>
                                 <td>${product.price}</td>

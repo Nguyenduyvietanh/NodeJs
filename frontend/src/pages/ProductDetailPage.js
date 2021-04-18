@@ -9,7 +9,7 @@ const ProductDetailPage = {
     return `
         <div class="chitiet">
         <div class="img">
-          <img src="${product.image}" width="420px" height="600px" alt="">
+          <img src="${product.photo}" width="420px" height="600px" alt="">
         </div>
         <div class="thongtin">
           <h1>${product.name}</h1>
